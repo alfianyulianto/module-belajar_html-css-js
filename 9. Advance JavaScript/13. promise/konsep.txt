@@ -1,0 +1,11 @@
+Promise : sebuah object yang mempresentasikan(menentukan) keberhasilan / kegagalan sebuah event yang asynchronous di masa yang akan datang
+
+Promise digunakan ketika kita melakukan request ke API
+
+- janji (terpenuhi / ingkar)
+- "di js janji ini disebut states / keadaan"
+- states (fulfilled / rejected / pending)
+- "untuk menjalankan keadaan ini maka dibutuhkan sebuah function callback"
+- callback (resolve / reject / finally)
+- "didalam promise ini ada aksi ketika jajjinya terpenuhi atau tidak terpenuhi"
+- aksi (then / catch)

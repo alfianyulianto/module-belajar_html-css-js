@@ -1,0 +1,24 @@
+.container {
+	width: 600px;
+	border: 5px solid gray;
+	margin: 30px auto;
+	padding: 5px;
+	border: 5px solid gray;
+	display: flex;
+}
+/*.container:after {
+	content: '';
+	display: block;
+	clear: both;
+}*/
+/*.clear{
+	clear: both;
+}*/
+.container div{
+	width: 100px;
+	height: 100px;
+	background-color: lightskyblue;
+	margin: 2px;
+	/*float: right;*/
+}
+

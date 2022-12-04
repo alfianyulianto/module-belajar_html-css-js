@@ -1,0 +1,3 @@
+Arrow Function tidak memiliki konsep "this"
+
+this => dijalankan ketika sebuah object di instansiasidd

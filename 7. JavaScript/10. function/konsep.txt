@@ -1,0 +1,89 @@
+- function : adalah kunci utama pada JS yang membuat JS sangat powerfull. -> Douglass Crockford
+- Definisi function 
+	1. Sebuah sub-program / sub-routine yang dapat dipanggil di bagian lain pada program 
+	2. Merupakan struktur dasar pembentukan JS
+	3. Disebut juga prosedur (kumpulan satatment untuk melakukan tugas atau menghitung sebuah nilai)
+	4. Untuk dapat menggunakannya, kita harus mebuat terlebih dahulu function tersebut lalu memanggilnya
+	5. Termasuk ke dalam First-Class Object
+- Ada 2 kategori dalam pembuatan function yaitui:
+	1. Built-In Function
+	2. User-Defined Function
+
+Built-In Function:String
+	- chartAt() : digunakan untuk mengetahui karakter di dalam sebuah string
+	- slice()
+	- split()
+	- toString()
+	- toLowerCase()
+	- toUpperCase()
+Referensi: https://www.w3schools.com/jsref/jsref_obj_string.asp
+
+Built_in Function: Math
+	- sin()
+	- cos()
+	- tan()
+	- random()	-> membangkitkan bilangan random
+	- round()	-> membulatkan angka ke yang terdekatS
+	- floor()	-> membulatkan angka ke bawah
+	- ceil()	-> membulatkan angka ke atas
+	- log()
+Referensi: https://www.w3schools.com/jsref/jsref_obj_math.asp
+
+
+- Cara membuat user-defined function
+	1. Dengan deklarasi / function declaration
+	sintaks :
+
+	functions identifier (Parameter-opt) {
+		FunctionBody
+	})
+
+	contoh pendeklarasian:
+	function jumlahDuaBilangan(a, b) {
+		var total;
+		total = a + b;
+
+		return total;
+	}
+
+	2. Dengan ekspresi / function expression
+	sintaks :
+
+	function identifier-opt (Parameter-opt) {
+		FunctionBody
+	}
+
+	contoh pendeklarasian:
+	var jumlahDuaBilangan = function(a, b) {
+		var total;
+		total = a + b;
+
+		return total;
+	}
+
+- Memnaggil / menjalankan function / instansiasi
+	jumlahDuaBilangan(1, 4);
+	jumlahDuaBilangan(2.1, 90);
+
+
+- Parameter : variabel yang ditulis di dalam kurung pada saat function dibuat, digunakan untuk menampung nilai yang dikirimkan saat fucntion dipanggil
+
+- Argument : nilai yang dikirimkan ke parameter saat fungsi dipanggil
+- Cara penggunaan argument :
+	1. Argument dapat berisi value
+	2. Argument dapat berisi variable
+	3. Argument dapat berisi ekspresi
+	4. Argument dapat berisi instansiasi dari function lain
+
+
+
+- Bagaimana jika parameter dan argument-nya tidak sesuai? Artinya disini jika parameter-nya berjumlah 3 sedangkan argument-nya berjumlah 2.
+	1. Jika parameter lebih sedikit dari argument, maka argument kelebihannya akan diabaikan
+	2. Jika parameter lebih banyak dari argument, maka parameter kelebihannya akan diisi dengan nilai undifined
+
+
+- Pada JS ada sebuah variable khusus yang bernama "arguments"
+	arguments / sudo variable / variabel semu : array yang berisi nilai yang dikirimkan saat fungsi dipanggil / diinstansiasi
+
+
+- Refactoring : sebuah proses mengubah kode agar menjadi lebih baik tanpa mengubah fungsionalitasnya

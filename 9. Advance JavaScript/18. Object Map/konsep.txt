@@ -1,0 +1,21 @@
+- Map adalah tipe data yang menyimpan koleksi data dengan format key dan value seperti Object.
+- Perbedaan Map dengan Object yaitu Map mengizinkan key dengan tipe data apapun sedangkan Object key harus berupa string atau simbol
+
+- Cara mendefinisikan Map dengan menggunakan sebuah Constructor "new Map()";
+- Apabila ingin menetapkan nilai dari Map secara langsung, gunakan array multi dimensi seperti ini:
+	* new Map([
+		['satu', 'array ke satu'],
+		[2, 'aray ke dua'],
+		[true, 'benar']
+	])
+- Array pertama (yang berada di luar) berfungsi untuk menyimpan masing-masing elemen atau pasangan key-value dari Map. Kemudian array di dalamnya, memiliki dua elemen, di mana elemen pertama adalah key dan elemen keduanya merupakan value.
+
+- get() : untuk mendapatkan nilai dengan key tertentu
+- set() : untuk menambahkan pasangan key-value
+- has() : untuk mengecek apakah sebuah element dengan key teretentu ada atau tidak. has() mengembalikan boolean
+- delete() : untuk menghapus sebuah element pada Object Map dengan key tertentu
+- clear() : untuk mengahapus semua element pada Object Map
+- entries() : untuk mengembalikan objek iterator baru yang berisi pasangan [kunci, nilai] untuk setiap elemen dalam Object Map dalam urutan penyisipan.
+- forEach() : untuk mengeksekusi fungsi yang disediakan satu kali per setiap pasangan kunci/nilai dalam Object Map
+- keys() : untuk mengembalikan sebuah key dari setiap element pada Object Map
+- values() : untuk mengembalikan sebuah value dari setiap element pada Object Map

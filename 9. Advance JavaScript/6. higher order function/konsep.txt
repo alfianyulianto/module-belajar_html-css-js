@@ -1,0 +1,67 @@
+Higher Order Function : function yang beroperasi pada function yang lain, baik itu digunakan dalam argument, maupun return value
+- Didalam sebuah JS sebuah function itu disebut "First Class Function". Dimana function ini diperlakuakn sebagai object
+
+Kenap mengunakan Higher Order Function?
+- Abstraksi : untuk membuat kode agar lebih sederhana
+
+COntoh Higher Order Function untuk pengeolaan array :
+Array.prototype.map() : untuk pengelolan array
+Array.prototype.filter() : untuk menyeleksi array
+Array.prototype.reduce() : 
+
+-------------------------------------------------------------------------------------
+| NODELIST itu berbeda dengan array sehingga tidak bisa dierikan map, filter, reduce |
+-------------------------------------------------------------------------------------
+
+Contoh penggunaan Higher Order Function :
+function kerjakanTugas(matakuliah, selesai) {    // kerjakanTugas : Higher Order Function - selesai : Callback
+    console.log(`Mulai mengerjakan tugas ${matakuliah} ...`);
+    selesai();
+}
+
+function selesai() {
+    alert('Selesai mengerjakan matakuliah!');
+}
+
+kerjakanTugas('Pemograman Web', selesai);
+
+- callback : function yang dijadikan sebuah argument
+- higher order function : sebuah funtion yang memiliki callback sebagai argument
+
+
+-----------------------------------------------------------------------------------------------------
+setTimeout(function(){      // setTimeout : Higher Order Function - function() : callback
+    console.log('Hello World!)
+}, 1000)
+
+
+------------------------------------------------------------------------------------------------------
+const tombol = document.querySelector('.submit');
+
+tombol.addEventListener('click', function(){
+    console.log('tombol ditekan!');
+})
+
+
+------------------------------------------------------------------------------------------------------
+function ucapkanSalam(waktu) {
+    return function() {
+        console.log(`Halo ${nama}, Selamat ${waktu}, semoga harimu menyenangkan!`);
+    }
+}
+
+let selamatPagi = ucapkanSalam('Pagi');
+
+let alfian = selamatPagi('alfian');
+
+
+------------------------------------------------------------------------------------------------------
+
+function repeat(n, action){
+    for( let i = 0; i < n; i++ ) {
+        action(i);
+    }
+}
+
+repeat(10, console.log);
+repeat(20, alert);

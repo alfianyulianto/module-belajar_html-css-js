@@ -1,0 +1,1 @@
+Inhetitance (pewarisan) : sebuah element mewarisi beberapa element nilai dari property yang dimiliki oleh element perent-nya

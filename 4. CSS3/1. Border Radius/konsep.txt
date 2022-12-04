@@ -1,0 +1,20 @@
+- Properti border-radius ini digunkana untuk membuat sisi pada sebuah element menjadi tumpul
+- Properti border-radius memiliki value dengan satuan px dan %
+- Penggunaan properti "border-radius: value;" ini berarti kita akan merubah ke empat sisinya
+
+Cara penggunaan properti ini:
+1. border-radius: 30px;
+2. border-radius: 50%; -> ini akan membuat sebuah element yg awalnya berbentuk bujursangkar akan menjadi lingkaran
+2. border-radius: 10px 100px -> ini akan membuat atas kiri dan bawah kanan 10px, kemudian atas kanan dan bawah kiri 100px
+
+Untuk merubah hanya salah satu sisi dari sebuah element agar menjadi tumpul dapat digunakan properti seperti :
+1. border-top-left-radius
+2. border-top-right-radius
+3. border-bottom-left-radius
+4. border-bottom-right-radius
+
+Dalam menggunakan properti border-radius kita dapat merubah ke empat sisinya sekaligus dengan menggunakan 4 value sekaligus
+4 value -> border-radius : atas-kiri atas-kanan bawah-kanan bawah kiri;
+3 value -> border-radius : atas-kiri atas-kananbawah-kiri bawah-kanan
+2 value -> border-radius : atas-kiribawah-kanan atas-kananbawah kiri
+

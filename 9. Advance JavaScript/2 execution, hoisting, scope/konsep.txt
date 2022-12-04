@@ -1,0 +1,8 @@
+Execution Context, Hositing & Scope
+
+- Didalam JS ada 2 fase Execution Context
+1. Creating
+2. Execution
+
+Untuk mengetahui konsep Hositing kunjungi website : javascript visualizer
+

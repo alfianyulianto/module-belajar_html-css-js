@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dimenis & Overflow</title>
+	<style>
+		/*untuk width & height ada beberpa satuan untuk digunakan pada valuenya*/
+		/*px (absolute / nilai pasti), % (relative terhadap element parent atau pembungkusnya ), in, cm, mm, pt (point), pc (pica)*/
+
+		/*Untuk mengatasi agar konten yang ditampilkan tidak keluar dari perent atau pembungkusnya menggunaan "properti overflow"*/
+		/*Ada beberapa value yang dapat diguanakn unutk "properti overflow"*/
+		/*1. visible (value default)*/
+		/*2. auto (CSS akan menambahkan scroll ketika konten tidak cukup lagi)*/
+		/*3. hidden : konten yang berlebih akan disembunyikan*/
+		/*4. scroll (CSS akan menambahkan scroll ketika konten cukup maupun tidak cukup)*/
+		.satu {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+		}
+		.dua {
+			/*width: 80%;*/
+			width: 120%;
+			background-color: aqua;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="satu">
+		<div class="dua">Hello World!</div>
+	</div>
+
+</body>
+</html>

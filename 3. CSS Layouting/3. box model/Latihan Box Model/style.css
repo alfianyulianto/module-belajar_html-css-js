@@ -1,0 +1,123 @@
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, 
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol,ul {
+	list-style: none;
+}
+blockquote, q{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style*/
+
+body {
+	font: 16px/28px arial, sans-serif;
+	background-image: url(image/bg.jpg);
+	background-size: contain;
+	color: #222;
+}
+
+/*container*/
+.container {
+	width: 800px;
+	margin: auto;
+	background-color: #fff;
+}
+
+/*header*/
+.header {
+	background-color: #000;
+	padding: 20px;
+	padding-bottom: 10px;
+}
+.header .judul {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+}
+.header ul li {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+.header a {
+	text-decoration: none;
+	color: salmon;
+	padding: 3px;
+}
+.header a:hover {
+	background-color: lightskyblue;
+	color: white;
+}
+
+/*hero*/
+.hero {
+	height: 250px;
+	background-image: url(image/hero-image.png);
+	background-size: cover;
+	background-position: 0 -10px;
+	border-top: 5px solid white;
+	border-bottom: 5px solid black;
+}
+
+/*content*/
+.content {
+	padding: 20px;
+}
+.content h2 {
+	font-size: 28px;
+	font-weight: bold;
+}
+.content .penulis {
+	font-size: 11px;
+	margin-top: -5px;
+}
+.content .penulis a {
+	color: salmon;
+	text-decoration: none;
+}
+.content p {
+	margin-bottom: 20px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+/*footer*/
+.footer {
+	background-color: #333;
+	padding: 10px;
+}
+.footer .copy {
+	color: #eaeaea;
+	text-align: center;
+	font-size: 12px;
+}

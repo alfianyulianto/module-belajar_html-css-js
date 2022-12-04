@@ -1,0 +1,20 @@
+- CSS3 merupakan generasi ke 3 dari spesifikasi CSS yang direkomendasikan oleh W3C
+- CSS3 diabgi menjadi beberapa modul dan tiap-tiap modulnya menambahkan kemampuan / fitur yang ada di CSS2
+
+Alasan menggunakan CSS3 antara lain :
+1. Membuat website menjadi lebih fleksibel
+2. Membuat mock-up dengan cepat tanpa bantuan bahasa scripting
+3. Mengurangi penggunaan gambar, sehingga load halaman akan lebih cepat
+4. Penggunaan selector untuk menghindari penggunaan markup yang boros
+
+Properti yang diguanakan pada CSS3 antara lain:
+- border-radius				- selector lanjut
+- opacity					- webfont
+- RGBa & HSLa				- media queries
+- box-sizing				- transform (2D & 3D)
+- box-shadow				- CSS transition
+- CSS gradient				- CSS animation
+- background				- FlexBox
+- pseudo-element			- CSS columns
+
+Tujuan menggunakan CSS3 tujuannya agar dapat bejalan di semua browser

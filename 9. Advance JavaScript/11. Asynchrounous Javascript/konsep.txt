@@ -1,0 +1,75 @@
+Javascript : Is a "single-threaded, non-blocking, asynchrououse and concurrent language"
+
+- Threaded : merupakan urutan kode yang dapat dilakukan secara bebas/indepenedent satu sama lain
+- Java script merupakan bahasa pemograman yg 'Single Threaded'
+Contoh single threaded: pengerjaannya harus berurutan artinya(untuk melanjutka ke task yg berikutnya harus menyelesaikan task yg sebelumnya)
+                      selesai      selesai      selesai 
+    thread1     Task-1  -->  Task-2  -->  Task-3  -->  Task-4
+
+Contoh multi threaded: pengerjaannya harus berurutan tapi tasknya bisa saja dikerjakan oleh threaded yg berbeda
+                      selesai      selesai      selesai 
+    thread1     Task-1                              Task-4
+
+    thread2                 Task-2
+
+    thread3                             Task-3
+
+
+- Blocking : ketika kita memiliki sebuah Task(script) yang belum selesai maka kita tidak bisa masuk ke Task berikutnya
+- Non-Blocking : ketika kita memiliki sebuah Task(script) yang belum selesai maka kita bisa masuk ke Task berikutnya
+
+- Synchronouse : pengerjaannya berurutan
+    Task-1  -->  Task-2 -->  Task-3 --> Task-4
+
+-Asynchronouse
+    # Single Threaded : pengerjaannya pindah-pindah dalam satu waktu tertentu (concurrency)
+    Task-1 -->  Task-2  -->  Task-1 -->  Task-2 ------ Task-1 -- > Task2
+  mulaiKerja  mulaiKerja                               selesai    selesai
+
+    # Multi Threaded : pengerjaannya secara bersamaan dalam satu waktu tertentu (parallelism)
+                --------       --------
+    thread1    | Task-1 |     | Task-2 |
+                --------       --------
+                       ----------
+    thread2           |  Task-2  |
+                        ----------
+                --------------------
+    thread3    |       Task-3       |
+                --------------------
+
+
+KESIMPULAN:
+- Single vs Multi Threaded : lingkunagn eksekusi 'task'
+- Blocking vs Non-Blocking : teknik 'ngoding' (berhubungan dengan Input Output)
+- Synchronouse vs Asynchronouse : sebenarnya hampir sama seperti blocking&non-blocking, tapi synch&ansync teknik 'ngoding' (berhubungan dengan HTTP Request /  ajax)
+- concurrency vs parallel : lingkungan eksekusi 'task'
+
+
+KSEIMPULAN  
+- JS merupakan single threaded (hanya bisa melakukan satu hal dalam satu waktu tertentu), tapi JS bisa non-blocking, dan asynchronouse
+
+Asynchronouse Javascript digunakan untuk
+1. callback
+2. promise
+3. ajax
+4. Async & Await
+
+- DIDALAM JS ADA YG NAMANYA V8 ENGINE YG DITANAMA DI DALAM BROWSER
+- DIDALAM V8 TERDAPAT 2 BAGIAN YAITU HEAP DAN STACK
+-------------------V8 Engine--------------------
+|                                               |
+|   ----Heap-----               ----Stack----   |
+|   |           |               |           |   |
+|   alokasi memori              |           |   |
+|   |           |               |           |   |
+|   |           |               function call   |
+|  deklarasi variabel           |           |   |
+|   |           |               |           |   |
+|   |           |             execution context |
+|   |  function |               |           |   |
+|   |  hoisting |               |           |   |
+|   -------------               -------------   |
+|                                               |
+-------------------------------------------------
+
+

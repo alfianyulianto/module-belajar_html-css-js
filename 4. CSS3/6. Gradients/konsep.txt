@@ -1,0 +1,35 @@
+Gradients : teknik untuk memberikan warna gradasi pada element
+
+Ada 2 tipe gradient yang bisa digunakan yaitu :
+1. linear-gradient : untuk memberikan gradasi warna secara garis lurus
+- linear-gradient bukan merupakan properti dari CSS3 melainkan value dari property background-image
+- sintaks sederhana -> background-image: linier-gradient(<warna-awal>, <warna akhir>);
+					-> background: linier-gradient(<warna-awal>, <warna akhir>);
+- multiple color -> background: linear-gradient(<warna-1>, <warna-2>,..., <warna-n>);
+- linear-gradient bisa ditambahkan dengan sudut atau arah
+- sudut = 90deg, -90deg, 45deg
+- arah = to bottom (dari atas ke bawah, to top (dari bawah ke atas), to left (dari kanan ke kiri), to right ( dar kiri ke kanan), to left top, to right top, to left bottom, to right bottom
+- sintaks lengkap -> background: linear-gradient(<sudut> | <arah>, <warna-awal>, <warna-akhir>);
+
+2. radial-gradient : untuk memberikan gradasi warna secara garis melingkar
+- radial-gradient bukan merupakan properti dari CSS3 melainkan value dari property background-image
+- sintaks sederhana -> background-image: radial-gradient(<warna-awal>, <warna akhir>);
+- warna pertama ini akan menjadi pusat utama lingkaran
+- multiple color -> background: radial-gradient(<warna-1>, <warna-2>,..., <warna-n>);
+- sintaks lengkap -> backround: radial-gradient(
+									<tipe> <jangkauan> at <posisi-y> <posisi-x>, 
+									<warna-1>, <warna-2>,..., <warna-n>
+								);
+- tipe : - circle
+		 - ellipes (default)
+- jangkauan : jarak dari pusat gradient ke sisi terluarnya
+	1. closest-corner : jarak dari pusat gradient ke "sudut terdekat" element
+	2. closest-side : jarak dari pusat gradient ke "sisi terdekat" element
+	3. farthest-corner : jarak dari pusat gradient ke "sudut terjauh" element
+	4. farthest-side : jarak dari pusat gradient ke "sisi terjauh" element
+- at <posisi-y> <posisi-x> : untuk menentukan posisi
+	1. posisi-y : top, sbottom, center, px
+	2. posisi-x : left, right, center, px
+
+COLOR STOP : untuk memberikan bobot warna yang berbeda. Misal jika ada 2 warna red dan green, kita ingin memberika warna red lebih dominan dari warna green. Valuenya bisa px atau %
+- misal background-image: linier-gradien(90deg, red 80%, green 5%); -> artinya warna merah akan 80% dari element kemudian hijau akan 5% dari element

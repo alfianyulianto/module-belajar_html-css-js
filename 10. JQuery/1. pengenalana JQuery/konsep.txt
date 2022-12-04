@@ -1,0 +1,12 @@
+JQuery : merupakan "pustaka JS" yang dibangn untuk mempercepat, memperingkas serta menyerderhanakan manipulasi dokumen HTML, penanganan event, animasi dan interaksi AJAX untuk mempercepat pengembangan web
+
+Sintaks JQuery
+1. $(selector).action()
+2. JQuery(selector).action();
+
+Keterangan 
+- $: simbol dolar mendefinisikan fungsi JQuery
+- Selectro: menunjukan element yang dipilih bisa berupa nama tag, nama class atau id element
+- Action: aksi yang akan diberikan terhadap element yang dipilih
+
+PENTING : PEMANGGILAN JQUERY DILAKUAKN SEBELUM KITA MAANGGIL SCRIPT.JS KITA 

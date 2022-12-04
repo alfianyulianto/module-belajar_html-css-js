@@ -1,0 +1,13 @@
+- Poperti transform memungkinkan kita dapat memanipulasi format visual dari element HTML
+- Mengunakan properti transform sama dengan menggunakan posision absolute lalu kita ber properti top, left, bottom, right. Akan tetapi perofmens dari properti transform jauh lebih baik dari properti position, karena properti transform bekerja dengan akselerasi hardware komputer / vga card
+- Ada 2 jenis transformasi yaitu 2D dan 3D
+
+Sintaks:
+transform: <fungsi>;
+
+Fungsi Transform ada 4 yaitu :
+1. scale : memperbesar / memperkecil
+2. rotate : memutar
+3. skew : membuat condong / miring
+4. translate : mengubah posisi
+

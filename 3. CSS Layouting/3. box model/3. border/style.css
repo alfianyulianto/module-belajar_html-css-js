@@ -1,0 +1,42 @@
+/*BORDER*/
+/*Penulisan border -> border : size style color*/
+/*border: 5px solid black*/
+/*STYLE BORDER :
+1. solid : bentuknya garis garis
+2. dotted : bentuknya titik-titik
+3. dashed : bentuknya garis putus-putus
+4. double : bentuknya garis double
+*/
+/*Border bisa ditulis satu persatu berdasarkan 
+propertinya
+border-width:  50px;
+border-style:  solid;
+border-color:  red;
+*/
+/*Border juga dapat digunakan untuk salah satu posisi
+border-left:  5px solid black;
+border-top: 5px dashed red;
+border-right:  5px bouble green;
+border-bottom:  5px dotted perpule;
+*/
+
+/*Border mempengaruhi ukuran element*/
+/*misal kita ingin membuat ukuran elemennya 
+yaitu height dan width 300px dan untuk dorder kita 
+memberi border: 5px solid black;*/
+/*maka kita harus membuat width dan height menjadi 290*/
+/*ini dilakukan agar ukuran element yang dibuat sesuai
+dengan yang diharapkan yaitu 300px*/
+
+
+div {
+	width: 290px;
+	height: 290px;
+	background-color: coral;
+	/*border: 5px double black;*/
+	border-left:  5px solid black;
+	border-top: 5px dashed yellow;
+	border-right: 5px double aqua;
+	border-bottom:  5px dotted blue;
+
+}

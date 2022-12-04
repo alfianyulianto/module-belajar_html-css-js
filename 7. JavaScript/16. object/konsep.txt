@@ -1,0 +1,31 @@
+- object kumpulan nilai yang memilik key dan value
+- key-nya nama
+
+- Contoh sintak object
+var mahasiswa = {
+	nama : 'Alfian Yulianto',
+	lulus : true,
+	IPSemester : [3.18, 3.53, 3.63, 3.95, 4.0, 3.95, 4],
+	IPKumulatif : function() {
+		var total = 0;
+		var ips = this.IPSemester;
+		for( var i = 0; i < ips.length; i++ ) {
+			total += ips[i];
+		}
+		return total / ips.length;
+	}
+};
+
+- Pemanggilan object
+mahasiswa.IPKumulatif();
+
+- Anotomi dari object
+var Orang = {
+	nama : 'Alfian Yulianto',	| properti
+	umur : 21,					| properti
+	pekerjaan : 'mahasiswa',	| properti
+	sapa : function() { 		| method -> function di dalam object
+		return 'Hi nama saya ' + this.nama + ' usia saya ' + this.umur + ' tahun, dan saya adalah seorang ' + this.mahasiswa;
+	}
+};
+Orang.sapa();

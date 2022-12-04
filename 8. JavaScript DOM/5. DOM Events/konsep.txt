@@ -1,0 +1,72 @@
+EVENTS != EVEN
+Even === genap / meskipun
+Events === kejadian
+
+- Event pada javascript merepresentasikan sebuah kejadian yang terjadi di dalam DOM...
+- ...Kejadian tersebut bisa dilakukan oleh user, 
+	- (mouse event, keyboard event, mengisiKan sesuatu ke dalam element input, menggerakan mouse, dll)
+- ataupun dilakukan otomatis oleh API.
+	- (animasi selesai dijalankan (dengan CSS), halaman selesai di load, dll)
+
+Cara 'Mendengarkan' event
+- Event Handler
+	- Inline HTML attribute
+		. Mencampuradukan HTML dengan javascrip di dalam file HTML
+		. Memodifikasi HTML, padahal kita dapat memodifikasi HTML dengan Events
+	- Element method
+- addEventListener()
+
+Cara membuat event
+1. Event Handler
+ 	-> on<event>
+
+
+Perbedaan Event Handler vs addEventListener()?
+Perbedaannya yaitu jika memberika lebh dari satu perubahan pada Event. Jika kita menggunakan Event Handlre maka perubahan yang kita lakukan akan menimpa perubahan sebelumnya. Jika kita menggunakan addEventListener() akan menambah perubannya
+
+
+
+Events List / Daftar Events
+1. Mouse Event
+	- click
+	- dblclick
+	- mouseover 
+	- mouseenter
+	- mouseleave
+	- mouseup
+	- change
+	- wheel
+	- ...
+2. Keyboard Event
+	- keydown -> saat tombol di tekan
+	- keypress -> saat tombol yang menghasilkan karakter di tekan
+	- keyup -> saat tombol di lepaskan
+3. Resource Event
+4. Focuse Event
+5. View Event
+	- resize
+	- scroll
+6. Form Event
+	- reset
+	- submit
+7. CSS Animation & Transition Event
+8. Drag & Drop Event
+dll
+
+
+6 JENIS EVENT JS YANG SERING DIGUNAKAN
+1. load -> ketika halaman HTML berhasil diload
+2. click
+3. change -> event terjadi ketika nilai suatu element berubah
+4. mouseover -> ketika pointer berada di element HTML
+5. mouseout -> ketika pointer keluar dari element HTML
+6. submit -> event terjadi ketika form di submit
+7. input -> event terjadi ketika nilai suatu element berubah secara realtime
+8. mousemove -> ketika mouse bergerak
+
+
+
+
+
+
+

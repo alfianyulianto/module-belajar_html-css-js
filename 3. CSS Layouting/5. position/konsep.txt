@@ -1,0 +1,30 @@
+- CSS Position : untuk membuatnya kita butuhkan properti dengan nama "position".
+- Properti position memiliki beberapa value diantaranya:
+1. static : nilai default dari tiap-tiap element ketika tidak diberi properti position.
+
+- Menggunakan position selain "static" (non-static), akan membuat sebuah element menjadi seolah-olah berada di dimensi lain dari element lainnya
+- Element yang diberi position selain "static" (non-static) dapat menggunakan properti "top, left, bottom, dan right" untuk mengatur posisinya
+
+2. relative : jika dilihat dalam 3D maka value relativ ini akan membuat element menjadi maju ke depan (maju satu dimensi)
+
+- Ketika kita menggerakkan element dengan posisi relative (menggunakan properti "top, left, bottom, dan right"), ruang yang ditempati oleh element tersebut masih ada.
+- Ketika kita menggerakkan element dengan posisi relative, element akan bergerak "relatif terhadap posisi semula-nya"
+- Jika kita memberi properti top: 0; dan left: 0; maka element tidak berubah posisinya
+
+3. absolute : jika dilihat dalam 3D maka value absolute ini akan membuat element menjadi maju ke depan (maju satu dimensi) dan tempat yang sebelumnya dianggap tidak ada sehingga element yang berada di bawah akan menempati element yang terkerna position: absolute;
+
+- Ketika kita menggerakkan element dengan posisi absolute (menggunakan properti "top, left, bottom, dan right"), ruang yang ditempati oleh element tersebut dianggap "tidak ada"
+- Ketika kita menggerakan element dengan posisi absolute, element akan bergerak relatif terhadap posisi dari element parentnya, "selama element parentnya memiliki posisi yang juga non-static"
+- Jika kita memberi properti top: 0; dan left: 0; maka element akan berada di ujung kiri atas dari element parentnya
+
+4. fixed 
+
+- Ketika kita menggunakan properti "top, left, bottom, dan right" pada "position: fixed;" maka element tersebut akan bergerak relatif terhadapt window browser, "sehingga dapat disimpulkan element ini tidak akan memperdulikan parentnya meskipun parentnya non-satatic"
+- Ketika kita scrool halamannya element tersebut akan terkunci di pisis tersebut
+
+5. Sticky
+- Value ini hampir mirip dengan position fixed 
+- Perbedaannya ada ketika halaman di scroll maka object akan berada pada bagian atas halaman
+
+
+Z-INDEX : digunakan ketika elmentnya non-static

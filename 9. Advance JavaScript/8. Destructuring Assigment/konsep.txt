@@ -1,0 +1,23 @@
+Destructuring Assigment : expression pada javascript uang membuat kita dapat "membongkar" nilai dari "array" atau properti dari "object" kedalam "variable" yang terpisah.
+
+
+Contoh :
+const coba = ['satu', 'dua', 'tiga'];
+
+const [a, b, c] = coba;   // buat [] untuk memboongkar array dan assigment dengan array coba
+console.log(a);  // 'satu'
+console.log(b);  // 'dua'
+console.log(c);  // 'tiga'
+
+
+
+const mhs = {
+    nama: 'Alfian Yulianto',
+    umur: 21,
+    email: 'alfianyulianto36@gmail.com'
+}
+
+const {nama, umur, email} = mhs;    // buat {} untuk membongkar object dan assigment dengan object mhs
+console.log(nama);  // 'Alfian Yulianto'
+console.log(umur);  // 21
+console.log(email);  // 'alfianyulianto36@gmail.com'

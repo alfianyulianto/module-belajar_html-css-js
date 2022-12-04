@@ -1,0 +1,76 @@
+- Array secara terminologi yaitu susunan sistematis dari objek-objek yang serupa
+- Array : tipe data yang digunakan untuk mendeskripsikan kumpulan element (nilai atau variable), yang tiap-tiap elemennya memiliki index
+- Array kumpulan pasangan key dan nilai / key and value pair
+- Key-nya adalah index pada array yang tipenya integer dan dimulai dari 0
+- Array pada JS bertipe object
+- Array pada JS memiliki fungsi / method length untuk menghitung jumlah element di dalamnya
+- Element pada Array boleh memiliki tipe data yang berbeda-beda
+
+- Alasan kenapa menggunakan Array?
+	1. Mempermudah pengolahan nilai / data
+		- penelusuran dan pencarian
+	2. Manajemen memeri
+		- karena tidak perlu membuat variable yang banyak
+
+- Cara medeklarasikan Array :
+	1. var hari = ['senin', 'selasa', 'rabu'];
+	2. var mhs = [];
+			mhs = ['alfian', 'yulianto', 'nova']
+
+- Tipe data Array boleh berbeda
+misal :
+var hari = ['senin', 'selasa', 'rabu'];
+
+var angka = [1, 2, 3];
+
+var myArr = ['teks', 2, true];
+
+var myFunc = function() {
+	alert('Hello World!');
+}
+var myArr2 = ['teks', 2, ture, myFunc];
+
+- Array MDULTIDIMENSI 
+var myArr3 = ['teks', 2, ture, myFunc, [9,8,7]]; // Array mulidimensi
+
+- Cara memanggil Array
+	console.log(hari[1]); -> 'selasa'
+	console.log(hari[3]); -> 'rabu'
+	console.log(myArr[1]); ->2
+	console.log(myArr3[4][1]); -> 8
+	console.log(myArr3[3]); -> 'Hello World!'
+
+- METHOD PADA ARRAY
+	1. length : untuk mengetahu panjang dari sebuah array
+	2. join : untuk menggabungkan seluruh isi aray dan mengubahnya menjadi string
+
+	3. push, pop, shift, unshift (digunkaan untuk menambah dan menghapus element array)
+		- push : untuk menambah element baru di akhir element array-nya
+		- pop : untuk menghilangkan element terakhir pada sebuah array
+		- unshift : unutk menambah element baru di awal element array -nya
+		- shift : unutk menghilangkan element pertama pada sebuah array
+
+	4. slice, splice
+		- slice : untuk mengambil bagian dari array untuk menjadi arary baru
+		- splice : untuk menyisipkan sebuah element di tengah array
+
+	5. foreach, map (looping untuk array)
+
+	6. sort : untuk mengurutkan isi arraynya
+
+	7. filter & find (untuk mencari element pada array)
+		- filter : mengembalikan banyak nilai. Digunkan untuk mencari element pada array dan mengembalikannnya dalam bentuk array
+		- find : mengembalikan satu nilai
+
+	8. includes, some, every, reduce, concat, Array.of
+		- includes : untuk megecek apakah pada elemen aray memenuhi suatu kondisi atau tidak
+		- some : untuk mengecek sekurang-kurangnya salah satu elemen aray memenuhi kondisi
+		- every : untuk mengecek apakah setiap elemen dalam array memenuhi kondisi
+		- reduce : untuk mereduce elemen array menjadi single value dengan menjumlah setiap elemen (dari kiri ke kanan)
+		- concat : untuk menggabungkan 2 array menjadi 1 array
+		- Array.of : untuk membuat array dari setiap argumen yang di passing
+	9. reverse : membalikan isi dari array
+	10. delete : menghapus data dari array
+
+- Referensi method dapat dilihat di link ini:
+https://developer.mpzilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array

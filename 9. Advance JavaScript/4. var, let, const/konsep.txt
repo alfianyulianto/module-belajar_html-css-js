@@ -1,0 +1,23 @@
+Ada 3 cara membuat variabel di dalam JS
+1. var -> menganut "function scope"
+2. let -> menganut "block scope"
+3. const -> menganut "block scope"
+
+
+IIFE / Immediately Invoked Function Expression
+SIAF / Sleft Invoking Anonymous Function
+artinya sebuah function ekpresi yang dipanggil langsung ketika di buat. Disini untuk menjaga sebuah variabel agar tidak bisa diakses dari luar (akan menganut Block Scope)
+
+Cara membuat :
+(function(){
+    -- isi kondisi--
+})()
+
+
+Const : ketika kita yain bahawa variabe yang ki assignt tidak berubah isinya. Dengan menggunakan "const" maka sebuah nilai tiak bisa dirubah
+- Alasan kenapa menggunakan const? untuk meminimalisir perubahan state
+
+
+
+
+

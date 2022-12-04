@@ -1,0 +1,27 @@
+.container {
+	width: 600px;
+	border: 5px solid gray;
+	margin: 30px auto;
+	padding: 5px;
+	border: 5px solid gray;
+	display: flex;
+}
+.container div{
+	width: 100px;
+	height: 100px;
+	background-color: lightskyblue;
+	margin: 2px;
+}
+.container div.satu {
+	order: 3;
+}
+.container div.dua {
+	order: 1;
+}
+.container div.tiga {
+	order: 4;
+}
+.container div.empat {
+	order: 2;
+}
+

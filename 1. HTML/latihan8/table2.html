@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Table</title>
+</head>
+<body>
+
+	<!-- CELL merupakan pertemuan antara baris dan kolom -->
+	<!-- Atribut pada tag table -->
+	<!-- 
+	border : untuk menambahkam garis sekitar cell
+	cellspacing : untuk menambah jarak antara cell
+	cellpadding : untuk memberi luas pada sebuah cell
+	colspan : untuk menggabungkan 2 buah kolom
+	rowspan : untuk menggabungkan 2 buah baris
+	-->
+
+	<table border="1" cellspacing="0" cellpadding="5">
+		<tr>
+			<td>1,1</td>
+			<td>1,2</td>
+			<td>1,3</td>
+		</tr>
+		<tr>
+			<td>2,1</td>
+			<td>2,2</td>
+			<td>2,3</td>
+		</tr>
+		<tr>
+			<td>3,1</td>
+			<td>3,2</td>
+			<td>3,3</td>
+		</tr>
+	</table>
+
+	<br><hr>
+
+	<table border="1", cellspacing="0" cellpadding="5">
+		<tr>
+			<td rowspan="3">Rowspan 3</td>
+			<td colspan="2">Colspan 2</td>
+		</tr>
+		<tr>
+			<td>2,2</td>
+			<td>3,3</td>
+		</tr>
+		<tr>
+			<td>3,2</td>
+			<td>3,3</td>
+		</tr>
+	</table>
+
+	<br><hr>
+
+	<table border="1" cellspacing="0" cellpadding="5">
+		<tr>
+			<td>1,1</td>
+			<td>1,2</td>
+			<td>1,3</td>
+			<td>1,4</td>
+		</tr>
+		<tr>
+			<td>2,1</td>
+			<td>2,2</td>
+			<td>2,3</td>
+			<td>2,4</td>
+		</tr>
+		<tr>
+			<td>3,1</td>
+			<td>3,2</td>
+			<td>3,3</td>
+			<td>3,4</td>
+		</tr>
+		<tr>
+			<td>4,1</td>
+			<td>4,2</td>
+			<td>4,3</td>
+			<td>4,4</td>
+		</tr>
+	</table>
+
+
+	<br><hr>
+
+	<table border="1" cellspacing="0" cellpadding="5">
+		<tr>
+			<td>1,1</td>
+			<td>1,2</td>
+			<td>1,3</td>
+			<td>1,4</td>
+		</tr>
+		<tr>
+			<td>2,1</td>
+			<td align="center" rowspan="2" colspan="2"><b>?</b></td>
+			<td>2,4</td>
+		</tr>
+		<tr>
+			<td>3,1</td>
+			<td>3,4</td>
+		</tr>
+		<tr>
+			<td>4,1</td>
+			<td>4,2</td>
+			<td>4,3</td>
+			<td>4,4</td>
+		</tr>
+	</table>
+
+</body>
+</html>

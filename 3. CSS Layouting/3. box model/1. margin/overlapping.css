@@ -1,0 +1,51 @@
+/*Overlapping Margin : terjadi ketika kita 
+menggabungkan dua buah margin*/
+/*Biasanya kiri dan kanan atau atas dan bawah*/
+/*Untuk yang vertikal margin tidakan di tambah 
+melainkan akan dimbil dengan margin yang 
+paling besar*/
+/*Untuk yang horizontal akan dijumlahkan untuk margin
+kiri dan kanan*/
+
+#vertikal .satu {
+	width: 200px;
+	height: 200px;
+	background-color: lightgreen;
+	margin-left: 100px;
+	margin-top: 30px;
+	margin-bottom: 150px;
+	margin-right: 50px;
+}
+#vertikal .dua {
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	margin-top: 50px;
+}
+#vertikal .tiga {
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+}
+
+#horizontal div {
+	display: inline-block;
+}
+
+#horizontal .satu {
+	width: 200px;
+	height: 200px;
+	background-color: lightgreen;
+	margin-right: 30px;
+}
+#horizontal .dua {
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	margin-left: 20px;
+}
+#horizontal .tiga {
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transform 2D</title>
+	<style>
+		p {
+			font-size: 20px;
+			text-align: center;
+		}
+		/*
+			scale(angka), scaleX(angka), scaleY(angka)
+			rotate(deg), rotateX(deg), rorateY(deg)
+			skew(deg), skewX(deg), skewY(deg)
+			translate(px), translateX(px), translateY(px)
+		*/
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			margin: 50px auto 0;
+			transition: 2s;
+		}
+		.kotak:hover {
+			/*transform: scale(0.5);*/
+			transform: scale(-0.5);
+			/*transform: scale(4);*/
+			/*transform: scaleX(2);*/
+			/*transform: scaleY(3);*/
+			/*transform: scale(1.5, 2); -> artinya sumbu X akan di perbesar 1.5 kali dan sumbu Y akan diperbesar 2 kali*/
+			/*transform: scaleX(2) scaleY(1.5);*/
+		}
+	</style>
+</head>
+<body>
+	<div class="kotak"></div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Temporibus, illum nemo voluptate ipsum, in doloribus maiores rem reprehenderit distinctio voluptas nulla, non eius exercitationem excepturi placeat ipsam facilis tenetur cupiditate?</p>
+</body>
+</html>

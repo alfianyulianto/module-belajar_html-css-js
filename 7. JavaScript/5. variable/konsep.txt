@@ -1,0 +1,32 @@
+- variable : sebuah tempat / wadah yang memiliki nama yang digunakan untuk menyimpan nilai 
+- tiga hal yang harus dipahamai dalam sebuah variable yaitu: deklarasi, inisialisasi, assignment
+
+Deklarasi : sebuah tahap untuk mendaftarkan variable ke dalam lingkup yang susuai
+Inialisasi : proses pemesanan atau penyediaan memori untuk variable
+Assignment : untuk menetapkan nilai yang spesifik untuk disimpan ke dalam variable
+
+misal : 
+var x; -> deklarasi & inisialisasi
+x = 20; -> assignment
+
+- Deklarasi variable dapat digunakan dengan keyword lain:
+1. var
+2. let
+3. const
+
+- Sintaks dalam deklarasi sebuah variable
+	var <nama variable>
+
+- Aturan dalam mendeklarasikan sebuah variable
+	1. var tidak boleh pake spasi;
+	2. nama bariabel boleng mengandung angkan tapi tidak boleh diawali dengan angka
+	3. jika nama variable lebih dari satu kata maka dihubungkan dengan character _ (underscore) atau dengan character $ atau boleh digabungkan tiap-tiap katanya 
+		var namavariabelPanjang; -> Camel Case
+	4. kata "keyword" dan "reserved word" tidak boleh digunakan untuk membuat nama variable
+
+- Shorthand dalam penulisan variable
+	var nama = "alfian",
+		umur = 21,
+		lulus = false;
+
+- Variable scope

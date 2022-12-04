@@ -1,0 +1,14 @@
+- Grid merupakan merupakan salah satu modul dari CSS 3 yang digunakan untuk mengatur layout website
+- Perbedaanya dengan Flex Box adalah Grid digunakan untuk mengatur layout dari 2 arah
+- Sama seperti Flex Box, Grid juga memiliki 2 elemen yaitu "Parent/Contaienr" dan "Child/items"
+- Cara menggunakan Grid yaitu dengan mengubah properti dispaly pada parent/container menjadi "grid"
+
+- Area diantara satu bari dan satu kolom disebut "cell"
+- Gabungan lebih dari beberapa cell disebut "Grid Cell"
+
+Properti pada grid antar lain:
+1. Display : untuk mengubah display menjadi grid
+	- grid -> untuk membuat container grid tingkat blok
+	- inline-grid -> untukmembuat inline grid container
+2. Gird-tamplate-column -> untuk mengatur jumlah kolom
+3. Grid-tamplate-rows -> untuk mengatur jumlah baris

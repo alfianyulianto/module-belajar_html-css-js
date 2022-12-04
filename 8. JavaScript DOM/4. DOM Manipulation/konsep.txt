@@ -1,0 +1,47 @@
+DOM Manipulation
+1. Manipulasi Element
+	- Manipulasi element yang sudah diambil atau diseleksi (merubah warna, mengabil paragraf, merubah isi, manambah attibute, mengelola class)
+2. Manipulasi Node
+	- Digunakan untuk menyisipkan atau menghilangkan element pada sebuah halaman
+ 
+
+Method pada Manipulasi Element
+1. element.innerHTML
+	-> mengganti isi dari sebuah teks yang sudah diseleksi
+2. element.style.<property>
+	-> memanipulasi style CSS dari sebuah elemet yang sudah diseleksi
+3. element.setAttribute()
+	-> memanipulasi sebuah attribute yang ada di element
+4. element.classList
+	-> memanipulasi sebuah class atau mengelola sebuah kelas
+5. element.className
+	-> memanggil isi dari class
+...
+
+
+Method pada Manipulasi Node
+1. document.createElement()
+	-> untuk membuat element
+2. document.createTextNode()
+	-> untuk membuat tulisan kedalam sebuah element
+3. node.appendChild()
+	-> untu menyimpan element dibagian akhir dari element parent
+4. node.insertBefore()
+	-> untuk menyimpan element (dibagian mana saja)
+5. parentNode.removeChild()
+6. parentNode.replaceChild()
+...
+
+
+
+Method pada Node (Method Baru)
+1. parentNode.append()
+	-> untuk menambah element di akhir sebuah parent
+2. parentNode.prepend()
+	-> untuk menambah element di awal sebuah parent
+3. childNode.before()
+	-> sama seperti insert before
+4. childNode.after();
+	-> sama seperti insert before
+5. childNode.remove();
+6. childNode.replaceWith();

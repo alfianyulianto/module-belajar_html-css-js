@@ -1,0 +1,56 @@
+- Properti transition memungkinkan kita dapat mengubah nilai dari properti HTML secra halus
+- Dengan menggunakan properti transition memungkinkan kita untuk menggeraka suatu elemen HTML dari keadaan awak hingga ke adaan akhir
+- Seperti CSS3 yang lainnya transition bisa digunakan untuk mutltiple transition
+
+
+    -------			transisi		-------
+	|	  |		................> 	|	  |
+	|	  |							|	  |
+	-------							-------
+  keadaan awal					 keadaan akhir
+
+Sintaks:
+transition: [property] <"durasi"> [fungsi] [delay];
+
+- Paremeter yang wajib di isi yaitu "durasi". Selain "durasi" properti yang lainnya merupakan optional
+- Properti durasi : disi dengan "angka" dan memiliki satuan "s/ms"
+
+
+Penulisan Properti:
+1. all
+2. <nama property>
+3. none
+
+Properti yang bisa diubah secara halus antara lain:
+- background-color			- top lef bottom right
+- backgrounf-position		- margin padding
+- background-size			- width height
+- border					- opacity
+- color 					- trasform
+- filter					- word-spacing
+- font-size  				- letter-spacing
+- line-height				- dll
+
+Properti yang tidak bisa diubah antara lain:
+- font-family
+- display
+- position
+- dll
+
+
+Fungsi Transisi / timing function
+timing function : digunakan untuk menentukan pergerakan saat menggunakan transisi
+- Nilai yang ada di time function antara lain:
+	1. ease (default)
+	2. ease-in
+	3. ease-out
+	4. ease-in-out
+	5. linear
+	6. cubic-bezier(w, x, y, z)
+
+
+Delay : untuk memberikan waktu tunggu sebelum kita mejalankan transisi
+- Nilainya seperti durasi yaitu "s/ms"
+
+
+

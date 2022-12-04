@@ -1,0 +1,5 @@
+- popup box / dialog box : merupakan window kecil pada browser kita yang dapat kita munculkan sebagai alat interaksi yang digunakan agar user dapat berdialog dengan halaman web
+- ada 3 buah popup box yang dapat digunakan yaitu:
+	1. alert
+	2. prompt
+	3. confirm

@@ -1,0 +1,8 @@
+Property yang dimiliki untuk mengatur text antara lain :
+1. color : untuk memberikan warna teks
+2. text-align : mengatur format paragraf / teks (rata kiri, rata tengah, rata kanan, rata kiri kanan)
+3. text-indent : memberikan indentasi pada paragraf / teks -> %, px
+4. text-decoration : mengatur dekorasi pada teks (none, underline, overline, line-throught)
+5. text-transform : mengubah jenis huruf menjadi besar / kapital (uppercase) , kecil (lowercase), Awal kata menjadi huruf besar (capitalize)
+6. letter-spacing : mengatur spasi antar huruf -> px, normal, em
+7. word-spacing : mengatur antar kata -> px, normal, em

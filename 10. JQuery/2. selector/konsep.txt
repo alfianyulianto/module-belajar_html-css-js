@@ -1,0 +1,55 @@
+Selector pada JQuery : duigunakan untuk "memilih element atau objek berdasarkan tag, id, class, dan attribute" yang akan dimanipulasi
+
+Contoh Penggunaan Selectro pad JQuery
+- Selector tag (h1, p, div, span, dll)
+    $('h1').css('color', 'red');            // actionnya berpa style css kemudian properti css nya apa dan valuenya apa
+
+- Selector Class (.text, .paragraf, .judul, dll);
+    $('.judul').cass('backgorund-color', 'red');
+
+- Selector id (#text, #paragraf, #judul, dll)
+    $('#text').css('backgorund-color', 'yello');
+
+- Selector gabungan 
+    $('h1 .judul #text').css('backgorund-color', 'salmon');
+
+- Selector all : digunakan untuk menyeleksi semua element
+$('*')
+
+- Selector this : digunakan untuk menyeleksi element HTML saat ini
+$(this)
+
+- Selector first : digunakan untuk nyeleksi element HTML yang pertama kali ditemukan
+$('h1:first')
+
+- Selector last : digunakan untuk nyeleksi element HTML yang terakhir kali ditemukan
+$('h1:last')
+
+- Selector first-child : digunakan untuk nyeleksi element <p> yang merupakan anak pertama dari parent
+$('p:first-child')
+
+- Selector last-child : digunakan untuk nyeleksi element <p> yang merupakan anak terakhir dari parent
+$('p:first-child')
+
+- Selector nth-child(n) : digunakan untuk nyeleksi element <p> yang merupakan anak ke-n dari parent
+$('p:first-child(2))
+
+- Selector first-of-type : Pilih setiap elemen <p> yang merupakan elemen <p> pertama dari induknya
+$('p:first-of-type')
+
+- Selector last-of-type : Pilih setiap elemen <p> yang merupakan elemen <p> terakhir dari induknya
+$('p:last-of-type')
+
+- Selector header : Semua elemen header <h1>, <h2> ...
+$(':header')
+
+
+
+- Selector attribute : digunakan untuk memanggil attribute pada tag HTML
+    -> ada beberapa cara untuk memanggil element HTML yang memiliki attribute
+    1. $('[href]')  : menyeleksi semua element dengan atribut href
+    2. $('a[href="_blank"]') : menyeleksi semua <a> elemen dengan nilai atribut target sama dengan "_blank"
+    3. $('a[href!="_blank"]') : menyeleksi semua <a> elemen dengan nilai atribut target TIDAK sama dengan "_blank"
+    4. $(':button') : menyeleksi semua elemen <button> dan elemen <input> dari type="button"
+    5. $('tr:event') : menyeleksi semua elemen <tr> genap
+    6. $('tr:odd') : menyeleksi semua elemen <tr> ganjil

@@ -1,0 +1,40 @@
+- Properti animation memiliki lebih dari 2 keadaan. Keadaan tersebut disebut "keyframe atau keadaan antaranya"
+- Untuk menyiapkan animasinya digunakan sitaks:
+@keyframes [name] {
+
+	from {
+
+	[properti-css]
+
+	}
+
+	to {
+
+	[properti-css]
+
+	}
+
+}
+
+- Dan untuk menggunakan animasinya menggunakan properti:
+animation: [name] [durasi] [timing-function];
+
+- Nilai apa saja yang ada di properti animation antara lain:
+animation: [name] [duration] [timing-function] 
+		[delay] [iteration-count] [direction] 
+		[fill-mode] [play-state];
+
+* iteration-count : digunakan untuk mengulang. Nilainya bisa "<angka> atau infinite". Jika "infinite" maka akan diulang terus menerus
+* direction : nilainya ada beberapa anatara lain:
+	- normal (defalut) : animasinya akan berjalan dari awal sampai akhir
+	- reverse : animasinya akan berjalan dari akhir ke awal
+	- alternate : animasinya akan bergantian yaitu dari awal ke akhir dan dari akhir ke awal
+	- alternate-reverse : animasinya bergantian yaitu dari akhir ke awal dan dari awal ke akhir
+* fill-mode : untuk menentukan akhir dari animasinya. Ada beberapa nilai antara lain:
+	- none
+	- forwards : animasinya akan berhenti di keadaan akhirnya
+	- backwards : animasinya akan berhenti sesuai dengan keadaan awalnya
+	- both
+* play-state : nilainya ada beberapa antara lain:
+	- running (default)
+	- paused

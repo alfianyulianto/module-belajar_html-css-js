@@ -1,0 +1,17 @@
+Looping Baru Pada Javascript
+1. for..of
+2. for..in
+
+for..of : merupakan sebuah looping ynag bisa mengulang atau menelusuri object-object yang iterable
+
+for..in : merupakan sebuah looping ynag bisa mengulang atau menelusuri object-object yang enumerable / properti pada object
+
+
+Iterable object :
+1. String
+2. Array
+3. Arguments / NodeList
+4. TypedArray
+5. Map
+6. Set
+7 User-defined Iterables

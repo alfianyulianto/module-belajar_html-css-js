@@ -1,0 +1,28 @@
+Property yang dimiliki untuk mengatur font antara lain :
+1. font-family : mengatur jenis font yang digunakan semisal "arial, verdana, san-serif"
+2. font-size : mengatur ukuran font -> %, px, em
+3. font-weight : mengatur ketebalan font -> %, 100-900, bold, bolder, ligther
+4. font-variant : mengubah font menjadi small caps (artinya semua huruf akan menjadi huruf besar, jika hurufnya sudah besar maka akan menjadi lebih besar lagi)
+5. font-style : mengubah font menjadi bercetak miring -> oblique, italic
+6. line-hight :  mengatur jarak antara baris -> %, px, em, normal
+
+CATEGORY FONT antara lain :
+1. sans-serif : jenis font yang bersih, tidak ada garis di ujung-ujungnya
+	- Arial
+	- Verdana
+	- helvetica
+2. serif : font yang punya garis kecil di setiap ujung huruf
+	- Times New
+	- Roman
+	- georgia
+	- gramond
+3. monospace : font yang setiap hurufnya mempunyai lebar yang sama
+	- Curier New
+	- Lucida Console
+	- Monaco
+4. cursive : font yang menirukan tulisan tanggan manusia
+	- Bush Script MT
+	- Lucida Handuriting
+5. fantasy : font yang dekoratif dan playful
+	- Copperplate
+	- Papyrus

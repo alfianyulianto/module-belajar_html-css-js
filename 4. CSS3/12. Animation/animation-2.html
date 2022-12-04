@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animation</title>
+	<style>
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+			/*animation-name: animasiKotak;*/
+			/*animation-duration: 2s;*/
+			/*animation-timing-function: ease;*/
+			/*animation-iteration-count: 2;*/
+			/*animation-direction: reverse;*/
+			/*animation: animasiKotak 3s ease 3 alternate forwards running;*/
+			animation: animasiKotak 3s ease 3 alternate forwards;
+		}
+		/*.kotak:hover {*/
+			
+			/*animation: [nama_animasi] [durasi] [timing-function];*/
+			
+		/*	animation: animasiKotak 2s ease;
+		}*/
+
+		/*@keyframes animasiKotak {
+			from {
+				width: 200px;
+			}
+			to {
+				width: 500px;
+			}
+		}*/
+		@keyframes animasiKotak {
+			0% {
+				width: 200px;
+			}
+			50% {
+				width: 500px;
+				height: 200px;
+			}
+			100% {
+				width: 500px;
+				height: 500px;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="kotak"></div>
+
+</body>
+</html>

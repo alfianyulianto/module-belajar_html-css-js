@@ -1,0 +1,12 @@
+Sintaks Else If
+if(kondisi 1) {
+	aksi 1
+} else if(kondisi 2) {
+	aksi 2
+} else if(kondisi 3) {
+	aksi 3
+} else if(kondisi n) {
+	asksi n
+} else {
+	aksi default
+}

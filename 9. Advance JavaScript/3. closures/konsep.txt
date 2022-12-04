@@ -1,0 +1,21 @@
+Closures : merupakan kombinasi antara function dan lingkungan leksikal (lexical scope) di dalam function tersebut. -Mozilla
+Closures : adalah sebuah function ketika memiliki akses ke parent scope-nya, meskipun parent scope-nya sudah selesai dieksekusi. -w3school
+Colsures : adalah sebuah function yang dikembalikan oleh function lain, yang memiliki akses ke lingkungan saat ia diciptakan.. -Code Fellow
+Colsures : adalah sebuah function yang sebelumnya sudah memiliki data, hasil dari function yang lain. - Tcthsith
+
+
+
+Lexical Scope : sebuah closure yang memiliki akses ke parent variable
+function init() {
+    var nama = 'alfian';            // local variabel dari function init
+    function tampilNama() {         // inner function (closure)
+        console.log(nama);          // akses ke parent variabel
+    }
+    tampilNama();
+}
+init();
+
+
+Alasan membuat Closures?
+1. untuk membuat function factories(membuat function yang menjalankan function yang lain)
+2. untuk membuat private method

@@ -1,0 +1,15 @@
+- vendor-prefixes : digunakan untuk membuat sintaks CSS3 compatible di semua browser
+- vendor-prefixes merupakan sintaks khusus yang harus ditambahkan untuk beberapa property CSS3
+- untuk tiap-tiap browser memiliki sintaks spesifik
+
+Vendor Prefixes :
+1. -webkit-<properti-css3> -> chrome, safari, opera versi terbaru
+2. -moz-<properti-css3> -> firefox
+3. -ms-<properti-css3> -> internet explorer, microsoft edge
+4. -o-<properti-css3> -> opera versi terdahulu
+
+Untuk mengetahui properti manasaja yang menggunakan vendor prefixes kunjungi website diantaranya:
+1. shouldiprefix.com
+2. caniuse.com
+3. http:///pleeease.io/play/
+4. plugin emmet

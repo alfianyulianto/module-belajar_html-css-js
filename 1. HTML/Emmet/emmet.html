@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coba Emet</title>
+</head>
+<body>
+	<!-- Membuat child div>ul>li -->
+	<div>
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+
+	<!-- Membuat sibling / saudara div+p+bq  -->
+	<div></div>
+	<p></p>
+	<blockquote></blockquote>
+
+	<!-- div+div>p>span+em -->
+	<div></div>
+	<div>
+		<p><span></span><em></em></p>
+	</div>
+
+	<!-- Climb up div+div>p>span+em^bq-->
+	<div></div>
+	<div>
+		<p><span></span><em></em></p>
+		<blockquote></blockquote>
+	</div>
+
+	<!-- div+div>p>span+em^^^bq -->
+	<div></div>
+	<div>
+		<p><span></span><em></em></p>
+	</div>
+	<blockquote></blockquote>
+
+	<!-- Membuat multiplication / perkalian ul>li*5 -->
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<!-- Membuat grouping div>(header>ul>li*2>a)+footer>p -->
+	<div>
+		<header>
+			<ul>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</header>
+		<footer>
+			<p></p>
+		</footer>
+	</div>
+
+	<!-- (div>dl>(dt+dd)*3)+footer>p -->
+	<div>
+		<dl>
+			<dt></dt>
+			<dd></dd>
+			<dt></dt>
+			<dd></dd>
+			<dt></dt>
+			<dd></dd>
+		</dl>
+	</div>
+	<footer>
+		<p></p>
+	</footer>
+
+	<!-- Membuat id dan class div#header+div.page+div#footer.class1.class2.class3 -->
+	<div id="header"></div>
+	<div class="page"></div>
+	<div id="footer" class="class1 class2 class3"></div>
+
+	<!-- Membuat attribute [att] td[title="Hello world!" colspan=3] -->
+	<td title="Hello world!" colspan="3"></td>
+
+	<!-- Membuat item numbering ($) ul>li.item$*5 -->
+	<ul>
+		<li class="item1"></li>
+		<li class="item2"></li>
+		<li class="item3"></li>
+		<li class="item4"></li>
+		<li class="item5"></li>
+	</ul>
+
+	<!-- ul>li.item$$$*5 -->
+	<ul>
+		<li class="item001"></li>
+		<li class="item002"></li>
+		<li class="item003"></li>
+		<li class="item004"></li>
+		<li class="item005"></li>
+	</ul>
+
+	<!-- Membuat text a{click me} -->
+	<a href="">click me</a>
+
+	<!-- a{click}+b{here} -->
+	<a href="">click</a><b>here</b>
+
+	<!-- a>{click}+b{here} -->
+	<a href="">click<b>here</b></a>
+
+	<!-- p>{Click }+a{here}+{ to continue} -->
+	<p>
+		Click 
+		<a href="">here</a>
+		 to continue
+	</p>
+
+	<!-- p{Click }+a{here}+{ to continue} -->
+	<p>Click </p>
+	<a href="">here</a> to continue
+
+	
+	<!-- .container>(.header>h1.judul>ul.nav>li*4>a{Link $})+(.hero)+((.content.cf>.main)+(h2)+(p>a{alfian yulianto}+{. pada 15 desember 2021})+(p>lorem20)+(p>lorem100) -->
+	<div class="container">
+		<div class="header">
+			<h1 class="judul">
+				<ul class="nav">
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li>
+				</ul>
+			</h1>
+		</div>
+		<div class="hero"></div>
+		<div class="content cf">
+			<div class="main"></div>
+		</div>
+		<h2></h2>
+		<p><a href="">alfian yulianto</a>. pada 15 desember 2021</p>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ratione ex aperiam assumenda architecto perspiciatis vitae laudantium necessitatibus facere itaque?</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Totam reiciendis laudantium quam dolorum soluta perferendis nostrum impedit, a nobis excepturi fugit neque laborum dolore ad unde quos distinctio tempore omnis mollitia expedita rerum. Provident ipsa voluptate nisi earum, repellat iusto, laboriosam quisquam a illum, unde, dolor inventore. Est iure ab voluptates rem aut soluta ipsa, architecto, voluptatem placeat nihil dolores quam aspernatur qui. Non, voluptates id odit dicta vitae ullam ad nostrum similique odio rem sapiente repellat nulla quos temporibus modi reprehenderit veniam at perspiciatis pariatur quisquam, aliquid et, est sint veritatis. Iure, blanditiis dolore illum necessitatibus sequi, ullam minus.</p>
+	</div>
+
+</body>
+</html>

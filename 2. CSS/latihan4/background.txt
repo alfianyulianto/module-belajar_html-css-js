@@ -1,0 +1,19 @@
+Property yang dimiliki untuk mengatur background antara lain :
+1. background-color : mengatur warna pada backgorund -> warna dalam bahasa inggirs, rgb / rgba, hexadesimal
+2. backgorund-image : mengatur gambar yang akan digunakan pada background ->url()
+3. background-position : mengatur posisi pada background -> horizonatal: right, left, center  vertical : top, bottom, center
+4. background-repeat : mengatur jenis pengulangan gambar pada background -> no-repeat, repeat, repeat-x, repeat-y
+5. background-size : untuk mengatur ukuran gambar pada latar belakang. Value antara lain:
+	- px, em, mm,cm, dll
+	- %
+	- auto : gambar akan ditampilkan sesuai dengan ukuran asli
+	- contain : resize image, merubah ukuran gambar dan memastikan gambar terlihat sepenuhnya
+	- cover : membuat gambar background fullscreen
+	- initial : setel value ke default
+
+6. background : mengatur latar belakang element secara luas
+7. background-attachment : mengatur suatu gambar apakah jika mouse di scroll gambar ikut scroll atau tetap. Value antara lain:
+	- scroll: gambar akan bergulir jika mouse discroll
+	- fixed : gambar background akan diam/tidak bergulir jika mouse di scroll
+	- local : gambar background akan bergulir dengan isi dari element atau content
+	- initial : mengatur properti ke nilai default

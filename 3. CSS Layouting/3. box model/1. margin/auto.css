@@ -1,0 +1,27 @@
+/*value "auto" digunakan khusus margin kiri dan kanan*/
+/*untuk mendapatkan efek dari value "auto" ini 
+margin-left dan margin-rightnya harus bernilai auto*/
+/*margin dengan nilai "auto" akan membuat elementnya 
+akan menjadi ke tengah*/
+
+.satu {
+	width: 200px;
+	height: 200px;
+	background-color: lightgreen;
+	margin-left: auto;
+	margin-right: auto;
+}
+.dua {
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tiga {
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+	margin-left: auto;
+	margin-right: auto;
+}

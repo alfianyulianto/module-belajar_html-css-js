@@ -1,0 +1,55 @@
+// manipulasi node
+- .append()     ->menambah element di akhir
+- .prepend()       ->menambah element di awal
+- .before()     ->menambah element sebelum
+- .insertBefore()       ->menambah element sebelum
+
+// dom traversal
+- .parent()     -> untuk mencari 1 element parent
+- .parents()        -> untuk mencari element parent sampai document
+- .parentUntil("div")        -> mencari element parent sampai element div
+- .children()       -> mencari semua element anak
+    $('div').children()
+- .find()       -> untuk menemukan element anak
+    $('div').find('.middle'); -> temukan element div yg mmemiliki kelas middle
+- .siblings()
+    $('h1').siblings('p')
+- .next()
+    $('h1').next()
+- .nextAll()
+    $('h1').nextAll()
+- .nextUntil()
+    $('h1').nextUntil('h3')
+- .prev()
+    $('h1').prev()
+- .prevAll()
+    $('h1').prevAll()
+- .prevUntil()
+    $('h1').prevUntil('p')
+
+- .on()
+- .click() , .dbclick() , .mouseover() ,  .mouseenter() , .keyup() , .keydown()
+- .is() : Periksa kumpulan elemen yang cocok saat ini terhadap pemilih, elemen, atau objek jQuery dan kembalikan true jika setidaknya salah satu dari elemen ini cocok dengan argumen yang diberikan.
+- .toggle() 
+
+// manipulasi element
+- .addClass()
+- .removeClass()
+- .toggleClass()
+- .text() : Mengatur atau mengembalikan konten teks dari elemen yang dipilih
+- .html() : Menetapkan atau mengembalikan konten elemen yang dipilih (termasuk markup HTML)
+- .val() : Menetapkan atau mengembalikan nilai bidang formulir
+
+// filtering
+- .last()
+- .first() 
+- .eq()
+    $('p').eq(1)    -> index dimulai dari 0
+- .not()
+    $('p').not('.paragraf')      -> mencari element p yang kelasnya bukan paragraf
+- .filter()
+    $('p').filter('.paragraf')      -> mencari element p yang kelasnnya paragraf
+- .map()
+- .join()   : menggabungkan array manjadi string 
+- .get(index) -> index dimulai dari 0
+- .each()

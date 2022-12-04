@@ -1,0 +1,13 @@
+Spreed Operator : merupakan sebuah operator yang memecah (expand / unpack) iterables menjadi single element
+
+Iterable object :
+1. String
+2. Array
+3. Arguments / NodeList
+4. TypedArray
+5. Map
+6. Set
+7. User-defined Iterables
+
+
+Rest Parameter : merepresentasikan argument pada function dengan jumlah yang tidak terbatas menjadi sebuah array.

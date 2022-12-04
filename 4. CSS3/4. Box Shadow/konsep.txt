@@ -1,0 +1,18 @@
+box-shadow : digunakan untuk memberikan bayangan pada sebuah element
+
+- Untuk membuat sebuah bayangan pada element diperlukan properti yang bernama "box-shadow"
+- box-shadow memiliki 4 value antara lain:
+	1. x-offset : untuk mengatur jarak bayangan pada sumbu horizontal. Nilainya numerik, jika nilainya positif maka akan bergerak ke kanan begitu sebaliknya jika negatif akan bergerak ke kiri
+	2. y-offset : untuk mengatur jarak bayangan pada sumbu horizontal. Nilainya numerik, jika nilainya positif maka akan bergerak ke bawah begitu sebaliknya jika negatif akan bergerak ke atas
+	3. blur : untuk menentukan seberapa berasar kita memberi ukuran blur ke bayangan. Jika nilainya semakin besar maka akan semakin blur
+	.4 color : untuk menentukan warna bayangan
+
+box-shadow: x-ffset  y-offset  blur  color
+
+- box-shadow memiliki 2 properti opsional 
+	1. spread / size : untuk memberikan ukuran pada bayangan
+box-shadow:  x-ffset  y-offset  blur  spread  color
+
+	2. inset : untuk membuat bayangan berada di dalam sebuah elment
+box-shadow: inset  x-ffset  y-offset  blur  spread  color
+

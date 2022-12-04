@@ -1,0 +1,85 @@
+- Regular Expression adalah sebuah pola yang digunakan untuk mencocokan kombinasi di dalam string
+- Diadalam JS Regex dapat digunakan pada objek
+- Cara menggunakannya dengan cara menggunakan function JS exec(), test(), match(), matchAll(), replace(), replaceAll(), search(), split()
+
+- Membuat Regex 
+	* regex dibuat di antara tanda /
+		^ const re = /ab+c/;
+	* atau dengan memanggil constructor dari objek RegExp
+		^ const re = new RegExp("/ab+c/")
+- Menulis sebuah pola Regex
+	* /abc/ -> mencari pola susunan "abc" pada sebuah string
+		^ pola substring "abc" cocok untuk kalimat 'Hai, apakah Anda tahu abc Anda?'
+		^ pola substring "abc" tidak cocok untuk kalimat 'Grab carb'
+	* /ab*c/  -> mencari pola dengan kecocokan "a" diikuti "b" lebih dari 0 diikuti dengan "c"
+		^ pada string "cbbabbbbcdebc", dan pola tersebut akan cocok dengan "abbbbc"
+	* /Chapter (\d+)\.\d*/
+
+- Type Character
+1. [A-Z] or [a-z] or [0-9]
+	* [A-Z] : mencocokan huruf katipal pertama kali ditemukan yang terdapat di string
+	* [a-z] : mencocokan huruf kecil pertama yang terdapat di string
+	* [0-9] : mencocokan nomor pertama yang terdapat di string
+	* Mencocokan salah satu karakter dari string sesuai di dalam kurung siku
+	* Kita dapat menentukan jarak karakter dengan tanda hubung(-)
+	* Jika tanda hubung(-) terdapat di awal karakter atau di akhir karakter dalam kurung siku maka hubung(-) dianggap sebagai karakter yang akan di cek
+	* Contoh
+		^ [abcd] sama dengan [a-d]. Mereka cocok dengan "b" di "brisket", dan "c" di "chop".
+		^ [\w-] sama dengan [A-Za-z0-9_-]. Keduanya cocok dengan "b" di "brisket", "c" di "chop", dan "n" di "non-profit".
+2. [^xyz] or [^a-c] or 0-9
+	* Kelas karakter yang dinegasikan atau diabaikan. Artinya, itu cocok dengan apa pun yang ada dalam tanda kurung maka akan di lewati karakter stringnya. 
+	* Kita dapat menentukan rentang karakter dengan menggunakan tanda hubung(-), tetapi jika tanda hubung(-) muncul sebagai karakter pertama setelah ^ atau karakter terakhir yang dimasukkan dalam tanda kurung siku, tanda hubung literal akan dimasukkan ke dalam kelas karakter sebagai karakter biasa. 
+	* Contoh
+		^ [^abc] sama dengan [^a-c]. Mereka awalnya mencocokkan "o" di "bacon" dan "h" di "chop".
+3. .
+	* Mengambil karakter satu karakter sebelumnya dan juga karakter yang menjadi pola regex
+	* Cocok dengan karakter tunggal apa pun kecuali terminator baris: \n, \r, \u2028 atau \u2029. 
+	* Contoh
+		^ /.y/ cocok dengan "my" dan "ay", tetapi bukan "yes", dalam "yes make my day", karena tidak ada karakter sebelum "y" dalam "yes".
+	* 
+4. \d 
+	* Cocok dengan digit apa pun (angka Arab). Setara dengan [0-9]. Misalnya, /\d/ atau /[0-9]/ cocok dengan "2" di "B2 adalah nomor suite".
+
+5. \D
+	* Mencocokkan karakter apa pun yang bukan digit (angka Arab). Setara dengan [^0-9]. Misalnya, /\D/ atau /[^0-9]/ cocok dengan "B" di "B2 adalah nomor suite".
+
+6. \w
+	* Mencocokkan karakter alfanumerik apa pun dari alfabet Latin dasar, termasuk garis bawah. Setara dengan [A-Za-z0-9_]. Misalnya, /\w/ cocok dengan "a" di "apel", "5" di "$5.28", "3" di "3D" dan "m" di "Émanuel", "_" di "rumah_kita"
+
+7. \W
+	* Cocok dengan karakter apa pun yang bukan karakter kata dari alfabet Latin dasar. Setara dengan [^A-Za-z0-9_]. Misalnya, /\W/ atau /[^A-Za-z0-9_]/ cocok dengan "%" di "50%" dan "É" di "Émanuel"
+
+8. \s
+	* Mencocokkan satu karakter spasi putih, termasuk spasi, tab, feed formulir, feed baris, dan spasi Unicode lainnya. Setara dengan [ \f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]. Misalnya, /\s\w*/ cocok dengan " bar" di "foo bar".
+
+9. \S
+	* Mencocokkan satu karakter selain spasi putih. Setara dengan [^\f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]. Misalnya, /\S\w*/ cocok dengan "foo" di "foo bar".
+
+10. \t
+	* Mencocokkan tab horizontal.
+
+11. \r
+	* Cocok dengan carriage return.
+
+12. \n
+	* Mencocokan umpan baris.
+
+13. \v
+	* Cocok dengan tab vertikal.
+
+14. \f
+	* Cocok dengan umpan formulir.
+
+15. \b
+	* Mencocokkan batas kata. Ini adalah posisi di mana karakter kata tidak diikuti atau didahului oleh karakter kata lain, seperti antara huruf dan spasi.
+	* Contoh
+		^ /\bm/ cocok dengan "m" di "moon".
+		^ /oo\b/ tidak cocok dengan "oo" di "moon", karena "oo" diikuti dengan "n" yang merupakan karakter kata.
+		^ /oon\b/ cocok dengan "oon" di "moon", karena "oon" adalah akhir dari string, sehingga tidak diikuti oleh karakter kata.
+
+16. \B
+	* Cocok dengan batas non-kata. Ini adalah posisi di mana karakter sebelumnya dan berikutnya memiliki jenis yang sama: Keduanya harus berupa kata, atau keduanya harus bukan kata, misalnya antara dua huruf atau antara dua spasi. Awal dan akhir string dianggap bukan kata. Sama seperti batas kata yang cocok, batas bukan kata yang cocok juga tidak disertakan dalam pencocokan. 
+	* Contoh
+		^ /\Bon/ cocok dengan "on" pada "at siang", dan /ye\B/ cocok dengan "ye" pada "mungkin kemarin".
+
+		

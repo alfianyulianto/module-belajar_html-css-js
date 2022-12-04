@@ -1,0 +1,16 @@
+/*Jika kita membatika padding dan bordernya maka
+harus kalkulasi lebar dan tingginya*/
+/*Total Dimensi = width/height + padding + border*/
+/*Jika kita mau hight 300px dan width 300px*/
+
+div {
+	/*lebar nya 300*/
+	/*tingginya 300*/
+	width: 225px;
+	height: 240px;
+	background-color: coral;
+	margin: auto;
+	padding: 30px;
+	border-right: 5px dotted blue;
+	border-left:  10px dashed black;
+}

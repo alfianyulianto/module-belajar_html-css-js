@@ -1,0 +1,6 @@
+- Opacity : digunakan untuk mengatur transparansi sebuah element
+- Valuenya kita bisa beri nilia antara 0 sampai 1
+- Jika 0 akan membuat elementnya akan menjadi transparan sampai element tersebut tidak terlihat
+- Sebuah element akan mewarisi opacity jika element parentnya terdapat properti opacity
+- Sebuah child tidak mungkin bisa di bikin solid jika element parentnya memiliki properti opacity
+- Jika parentnya memiliki opacity 0.5 maka pada element childnya akan memiliki setengah dari opacity parentnya

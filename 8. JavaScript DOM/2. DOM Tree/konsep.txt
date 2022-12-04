@@ -1,0 +1,42 @@
+Tipe-tipe node :
+- Element
+- Attribute
+- Text
+- CData Section
+- Entity Referance
+- Entity
+- Processing Instruction
+- Comment
+- Document
+- Document Type
+- Document Fragment
+- Notation
+
+
+Tipe Kumpulan dari Node :
+1. nodeList : Kumpulan node yang tidak memperdulikan tipe dari nodenya 
+2. HTMLCollection : Kumpulan node yang khusus untuk element HTML saja
+
+
+NodeList vs. HTMLColletion
+- Keduanya merupakan "kumpulan node"
+- Struktur datanya mirip "array"
+- nodeList dapat berisi node apapun, sedangkan HTMLCollection harus berisi element HTML
+- HTMLCollection bersifat "live" sedangkan nodeList tidak
+
+
+Struktur Hierarki DOM Tree
+1. Root Node (node akar, node sumber, node utama )
+	- Node yang menjadi sumber dari semua node lain di dalam DOM
+	- secara default node sumbernya ialah "document"
+2. Parent Node
+	- Node yang berada 1 tingkat diatas node yang lain
+	- Jika berada di 2 tingkat diatas maka disebut "Grandparent"
+	- Jika berada di lebih dari 2 tingkat maka disebut "Unsesstor"
+3. Child Node 
+	- Node yang berada 1 tingkat dibawah node yang lain
+	- Tidak peduli tipe dari nodenya (mau text, element, atribut, dll)
+	- Children yaitu child node yang bertipe "element HTML"
+	- Sibllings yaitu child node yang memiliki parent yang sama
+	- Decendent yaitu keturunan dari child node (anak, cucu, canggah)
+3. 

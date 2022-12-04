@@ -1,0 +1,34 @@
+h1 {
+	/*color: gold;*/
+	/*color: #d16781;*/
+	color: rgb(101, 222, 111);
+	font-size: 150px;
+	/*text-decoration: none;*/
+	/*text-decoration: underline;*/
+	/*text-decoration: overline;*/
+	text-decoration: line-through;
+	/*text-transform: uppercase;*/
+	text-transform: lowercase;
+	/*text-transform: none;*/
+	/*text-transform: capitalize;*/
+}
+
+a {
+	text-decoration: none;
+	color: #f17811;
+}
+
+p {
+	/*text-align: center;*/
+	/*text-align: right;*/
+	/*text-align: left;*/
+	/*text-align: justify;*/
+	/*text-indent: 100px;*/
+	text-indent: 9%;
+	text-decoration: underline;
+	/*text-decoration: overline;*/
+	letter-spacing: 1px;
+	/*letter-spacing: normal;*/
+	word-spacing: 2px;
+	/*word-spacing: normal;*/
+}

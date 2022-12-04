@@ -1,0 +1,16 @@
+- AJAX adalah seni bertukar data dengan server, dan memperbarui bagian halaman web - tanpa memuat ulang seluruh halaman.
+- Dengan metode jQuery AJAX, Anda dapat meminta teks, HTML, XML, atau JSON dari server jauh menggunakan HTTP Get dan HTTP Post - Dan Anda dapat memuat data eksternal langsung ke elemen HTML yang dipilih dari halaman web Anda!
+
+Kepanjangan dari AJAX
+- AJAX = Asynchronous JavaScript and XML.
+
+Sintak ajax pada JQUERY?
+1. $(selector).load(URL,data,callback);
+
+- url : mengarah pada url yang ingin diambil datanya
+- data
+- callback/function(response, status, xhr) : untuk menentukan function callback ketika menjalankan load()
+  response  -> berisi data hasil dari permintaan
+  status    -> berisi status permintaan("success", "notmodified", "error", "timeout", "parsererror")
+  xhr       -> berisi XMLHttpRequest object
+

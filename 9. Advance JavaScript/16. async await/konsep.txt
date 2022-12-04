@@ -1,0 +1,8 @@
+Asyncronous Function : Sebuah function yang bekerja secara asyncronous (melalui event loop), yang menghasilkan (implisit / fungsinya akan mengembalikan async meskipun fungsinya menjalankan sync) promise sebagai return value-nya, tapi cara penulisan code-nya menggunakan penulisan yang syncronous (standart) - mozilla
+
+Asyncronous Function
+- fungsi yang berjalan secara Asyncronous
+- menghasilkan (implisit) promise
+- cara penulisannya sama seperti syncronous function (function biasa)
+
+Sebuah Asyncronous Function dapat memiliki keyword "await" di dalamanya untuk memberitahu sementara eksekusi fungsinya sambl menunggu promise-nya selesai. - mozilla

@@ -1,0 +1,31 @@
+- String : tipe data string pada JS digunakan untuk merepresentasikan data tekstual (plain text)
+- Untuk membuat string kita bisa gunakan tanda " " atau ' '
+- Kapan kita dapat menggunakan kutip dua atau kutip satu
+	misal : "Hari ini adalah hari Jum'at"
+			'Kita akan melaksanan "Gerakan Pungut Sampah"'
+
+escape : digunakan untuk mengintreprestasikan sebuah chracter
+	misal : '"Gerakan Pungut Sampah" dilaksanankan pada hari Jum\'at'
+			"\"Gerakan Pungut Sampah\" dilaksanakan pada hari Jum'at"
+
+escape character			hasil
+-------------------------------------
+\0					 |	karakter NULL
+\'					 | '
+\"					 | "
+\\					 | \
+\n 					 | new line / baris baru
+\t   				 | tab
+\b 					 | backspace
+\uXXXXX 			 | unicode -> "u{1F4A9}" , "\uD83D\uDD13", "\u00A9" , "\u2122", "\u00AE" 
+
+
+- Membandingkan 2 buah string
+	misal : "Alfian Yulianto" == "alfian yulianto" -> false
+
+- .lenght : menghitung panjang string
+	misal : var x
+			x = "Alfian Yulianto"
+			x.lenght -> 15
+
+

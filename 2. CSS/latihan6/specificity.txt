@@ -1,0 +1,86 @@
+setiap deklarasi selector CSS memiliki berat yang berbeda. Berat tersebut menentukan seberapa spesifik sebuah element dapat dipilih untuk diberika style
+
+Misal 1:
+HTML
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+CSS
+p {
+	color: red;
+}
+p {
+	color: green;
+}
+Artinya elemet <p> yang ada di HTML akan berwarna green. Karena elemet <p> yang pertama akan dioveread oleh <p> yang kedua.
+
+Misal 2:
+HTML
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+CSS
+#p1 {
+	color: red;
+}
+p {
+	color: green;
+}
+Artinya element <p> yang ada di HTML akan berwarna merah. Karena #p1 lebih sepesifik dari p.
+
+Cara menghitung:
+	inline	  id 	  class   	element
+	   0	   0		0		   0
+
+#p1 = 0		1 		0		0
+
+			VS
+
+p   = 0		0		0		1
+
+
+Misal 3 :
+HTML
+<ul id="sarapan">
+	<li class="favorit">Nasi Goreng</li>
+	<li>Nasi Kuning</li>
+	<li>Roti</li>
+</ul>
+
+CSS
+ul#sarapan li (artinya CSS tolong carikan saya li yang ada pada ul dengan id sarapan) {
+	color: green;
+}
+.favorit {
+	color: red;
+}
+Artinya list yang ada di HTML akan berwarna green. Karena ul#sarapan li lebih spesifik.
+
+				inline		id 		class		element
+ul#sarapan li =    0		1 		  0				2
+
+								VS
+.favorit = 			0		0		  1 			0
+
+
+Jika ingi nasi gorengnya berubah warna menjadi merah maka yang perlu dilakukan adalah
+ul#sarapan li (artinya CSS tolong carikan saya li yang ada pada ul dengan id sarapan) {
+	color: green;
+}
+ul#sarapan li.favorit (artinya CSS tolong carikan saya li dengan class favorit yang ada pada ul dengan id sarapan){
+	color: red;
+}
+
+				inline		id 		class		element
+ul#sarapan li =    0		1 		  0				2
+
+								VS
+.favorit = 			0		1		  1 			2

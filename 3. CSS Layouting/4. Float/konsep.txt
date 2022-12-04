@@ -1,0 +1,28 @@
+FLOAT : merupakan properti pada CSS untuk mengatur posisi sebuah elemen. Sebuah elemen dapat dipaksa untuk berada di sebelah kiri atau kanan dari perent/pembungkusnya dengan menggunakan properti ini.
+Value pada properti foalt antara lain:
+1. none
+2. left
+3. right
+
+PERILAKU KETIKA ELEMENT-ELEMENT DI BERI CSS ADA 2 YAITU:
+1. Normal flow : semisal kita punya display block tentunya elementnya akan bertambah ke bawah. Jika display inline maka elemennya akan berjajar. Inilah yang disebut dengan konsep Normal Flow
+
+2. Out of flow 
+
+YANG BISA DILAKUKAN DENGAN MENGGUNAKAN PROPERTI FLOAT
+1. text wrapping : membuat teks mengelilingi gambar / element lain
+2. image gallery : membuat serangkaian gambar menjadi galeri
+3. multi-column layout : membuat halaman memiliki beberapa kolom
+4. dll
+
+
+CARA MENGHENTIKAN / MEMBERSIHKAN FLOAT
+1. menggunakan property overflow
+2. menggunakan <div> kosong
+3. menggunakan micro clearfix
+
+CLEAR : berfungsi untuk membersihkan / menghentikan float yang kita buat
+Ada beberapa value yang digunakann antara lain :
+1. left
+2. right
+3. both : untuk membersihkan float kiri dan kanan

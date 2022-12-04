@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <title>Latihan Callback Dengan AJAX dan JSON</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <h1>AY Movie DB</h1>
+            </div>
+        </div>
+
+        <!-- serach -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control input-keyword" placeholder="Serach movie..">
+                    <button class="btn btn-primary search-button" type="button">Serach</button>
+                </div>
+            </div>
+        </div>
+        <!-- enserach -->
+
+        <!-- card -->
+        <div class="row movie-container">
+        </div>
+        <!-- endcard -->
+    </div>
+
+    <!-- Awal Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="movieDetailModal" tabindex="-1" aria-labelledby="movieDetailModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="movieDetailModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Modal -->
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <!-- myJS -->
+    <script src="script.js"></script>
+    <!-- sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+</body>
+
+</html>

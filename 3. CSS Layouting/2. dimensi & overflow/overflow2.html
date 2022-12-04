@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dimensi & Overflow</title>
+	<style>
+		/*untuk width & height ada beberpa satuan untuk digunakan pada valuenya*/
+		/*px (absolute / nilai pasti), % (relative terhadap element parent atau pembungkusnya ), in, cm, mm, pt (point), pc (pica)*/
+
+		/*Untuk mengatasi agar konten yang ditampilkan tidak keluar dari perent atau pembungkusnya menggunaan "properti overflow"*/
+		/*Ada beberapa value yang dapat diguanakn unutk "properti overflow"*/
+		/*1. visible (value default)*/
+		/*2. auto (CSS akan menambahkan scroll ketika konten tidak cukup lagi)*/
+		/*3. hidden : konten yang berlebih akan disembunyikan*/
+		/*4. scroll (CSS akan menambahkan scroll ketika konten cukup maupun tidak cukup)*/
+		.kata {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			overflow: scroll;
+		}
+		.kata p {
+			width: 300px;
+		}
+		.table {
+			width: 500px;
+			height: 400px;
+			overflow: scroll;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="kata">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<br><br>
+
+	<div class="table">
+		<table border="1" cellspacing="0" cellpadding="20">
+			<tr>
+				<td>kolom 1, baris 1</td>
+				<td>kolom 1, baris 2</td>
+				<td>kolom 1, baris 3</td>
+				<td>kolom 1, baris 4</td>
+				<td>kolom 1, baris 5</td>
+				<td>kolom 1, baris 6</td>
+				<td>kolom 1, baris 7</td>
+				<td>kolom 1, baris 8</td>
+				<td>kolom 1, baris 9</td>
+			</tr>
+			<tr>
+				<td>kolom 2, baris 1</td>
+				<td>kolom 2, baris 2</td>
+				<td>kolom 2, baris 3</td>
+				<td>kolom 2, baris 4</td>
+				<td>kolom 2, baris 5</td>
+				<td>kolom 2, baris 6</td>
+				<td>kolom 2, baris 7</td>
+				<td>kolom 2, baris 8</td>
+				<td>kolom 2, baris 9</td>
+			</tr>
+			<tr>
+				<td>kolom 3, baris 1</td>
+				<td>kolom 3, baris 2</td>
+				<td>kolom 3, baris 3</td>
+				<td>kolom 3, baris 4</td>
+				<td>kolom 3, baris 5</td>
+				<td>kolom 3, baris 6</td>
+				<td>kolom 3, baris 4</td>
+				<td>kolom 3, baris 5</td>
+				<td>kolom 3, baris 6</td>
+			</tr>
+			<tr>
+				<td>kolom 4, baris 1</td>
+				<td>kolom 4, baris 2</td>
+				<td>kolom 4, baris 3</td>
+				<td>kolom 4, baris 4</td>
+				<td>kolom 4, baris 5</td>
+				<td>kolom 4, baris 6</td>
+				<td>kolom 4, baris 7</td>
+				<td>kolom 4, baris 8</td>
+				<td>kolom 4, baris 9</td>
+			</tr>
+			<tr>
+				<td>kolom 5, baris 1</td>
+				<td>kolom 5, baris 2</td>
+				<td>kolom 5, baris 3</td>
+				<td>kolom 5, baris 4</td>
+				<td>kolom 5, baris 5</td>
+				<td>kolom 5, baris 6</td>
+				<td>kolom 5, baris 7</td>
+				<td>kolom 5, baris 8</td>
+				<td>kolom 5, baris 9</td>
+			</tr>
+			<tr>
+				<td>kolom 6, baris 1</td>
+				<td>kolom 6, baris 2</td>
+				<td>kolom 6, baris 3</td>
+				<td>kolom 6, baris 4</td>
+				<td>kolom 6, baris 5</td>
+				<td>kolom 6, baris 6</td>
+				<td>kolom 6, baris 7</td>
+				<td>kolom 6, baris 8</td>
+				<td>kolom 6, baris 9</td>
+			</tr>
+			<tr>
+				<td>kolom 6, baris 1</td>
+				<td>kolom 6, baris 2</td>
+				<td>kolom 6, baris 3</td>
+				<td>kolom 6, baris 4</td>
+				<td>kolom 6, baris 5</td>
+				<td>kolom 6, baris 6</td>
+				<td>kolom 6, baris 7</td>
+				<td>kolom 6, baris 8</td>
+				<td>kolom 6, baris 9</td>
+			</tr>
+			<tr>
+				<td>kolom 6, baris 1</td>
+				<td>kolom 6, baris 2</td>
+				<td>kolom 6, baris 3</td>
+				<td>kolom 6, baris 4</td>
+				<td>kolom 6, baris 5</td>
+				<td>kolom 6, baris 6</td>
+				<td>kolom 6, baris 4</td>
+				<td>kolom 6, baris 5</td>
+				<td>kolom 6, baris 6</td>
+			</tr>
+			<tr>
+				<td>kolom 6, baris 1</td>
+				<td>kolom 6, baris 2</td>
+				<td>kolom 6, baris 3</td>
+				<td>kolom 6, baris 4</td>
+				<td>kolom 6, baris 5</td>
+				<td>kolom 6, baris 6</td>
+				<td>kolom 6, baris 4</td>
+				<td>kolom 6, baris 5</td>
+				<td>kolom 6, baris 6</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>

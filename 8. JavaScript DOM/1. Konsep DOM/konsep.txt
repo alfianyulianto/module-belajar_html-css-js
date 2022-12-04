@@ -1,0 +1,50 @@
+|----------------------------------|
+|  Document Object Model atau DOM  |
+|----------------------------------|
+
+DOM adalah antarmuka pemrograman untuk HTML yang merepresentasikan halaman web, sehingga program dapat mengubah dan memanipulasi strukturnya. (Mozilla)
+
+Arti dari masing kata-kata dari DOM
+- Document : document di sini ialah document web kita, jadi isi dari website itulah yang dinamakan "document"
+- Object : contohnya let mahasiswa = {
+									nama : 'Alfian Yulianto',
+									nim : 'L200180121',
+									email : [
+										'alfianyulainto36@gmail.com',
+										'l200180121@student.ums.ac.id'
+										],
+									hitungIPK : function() {
+										....
+									}
+								}
+- Model : representasi terhadapt sesuatu
+
+DOM  merupakan representasi element HTML pada dokumen menjadi sebah objek. (Sandhika Galih)
+
+| ILUSTRASI | -> Kita memiliki sebuah halaman  HTML yaitu index.html kemudian nantinya oleh browser itu di representasikan sebagai sebuah objek disimpan kedalam borwsernya
+
+WINDOW
+	|--> document
+	|
+	|--> hostory
+	|
+	|--> location
+
+
+REKAP :
+- Antarmuka pemograman berbasis objek yang merepresentasikan dokumen web
+- DOM membuat seluruh komponen dari halaman web dapat diakses & dimanipulasi
+- Komponen : 1. Element HTML
+			 2. Atribut
+			 3. Text
+			 4. dll
+- DOM dapat (dimanipulasi, dibuat, dan dihapus) dengan menggunakan "javascript"
+
+
+MATERI DI SERI INI :
+1. DOM Selection (memilih element pada dokumen dengan JS)
+2. DOM Manipulation (menambah, menghapus, mengubah)
+3. DOM Traversal (menelusuri element HTML )
+4. Event Handling 
+5. Studi Kasus
+	- Membuat program sederhana

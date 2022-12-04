@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Filter</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		/*
+		filter: 
+			blur( px) -> Membuat gambar menjadi blur
+			brightness( angka | % ) -> Mengatur terang sebuah gambar. Nilai default 100%
+			contrast( angka | % ) -> Nilai default 100%
+			saturate( angka | % ) -> Untuk mengatur saturasi sebuah gambar. Jika semakin besar nilainya makan gambar akan semakin berwarna
+			grayscale( angka | % ) -> Merubah gambar berwarna abu-abu. Nilai default 0
+			sepia( angka | % ) -> Merubah gambar berwarna kuning. Nilai default 0
+			hue-rotate( deg ) -> Digunakan untuk merotasi warna
+			invert( angka | % ) -> Membuat gambar seperti negatif film. Nilai default 0
+			opacity( angka | % ) -> Nilai default 1. Ini membuat gambar menjadi solid
+			drop-shadow( sama seperti box shadow ) -> dorp-shadow bisa digunakan untuk memberikan bayang ke gambar atau teks
+		*/
+		img {
+			display: block;
+			margin: 10px auto;
+		}
+		.img1 {
+			filter: blur(20px);
+		}
+		.img2 {
+			filter: brightness(1.1); /*1.1 = 110%, 1 = 100%*/
+		}
+		.img3 {
+			filter: contrast(150%);
+		}
+		.img4 {
+			filter: saturate(50%);
+		}
+		.img5 {
+			filter: grayscale(100%);
+		}
+		.img6 {
+			filter: sepia(100%);
+		}
+		.img7 {
+			filter: hue-rotate(100deg);
+			/*filter: hue-rotate(50deg);*/
+		}
+		.img8 {
+			filter: invert(100%);
+		}
+		.img9 {
+			filter: opacity(0.5);
+		}
+		.img10 {
+			filter: drop-shadow(5px 5px 5px black);
+		}
+		h1 {
+			filter: drop-shadow(5px 5px 5px black);	
+		}
+		.img11 {
+			filter: blur(5px) grayscale(50%);
+			transition: 1s;
+		}
+		.img11:hover {
+			filter: blur(0) grayscale(0);
+		}
+	</style>
+</head>
+<body>
+	
+	<img src="alfianyulianto.jpg" alt="alfian yulianto" title="blur" class="img1">
+	<img src="alfianyulianto.jpg" alt="alfian yulianto" title="brighness" class="img2">
+	<img src="alfianyulianto.jpg" alt="alfian yulianto" title="contras" class="img3">
+	<img src="alfianyulianto.jpg" alt="alfian yulianto" title="saturate" class="img4">
+	<img src="alfianyulianto.jpg" alt="alfian yulianto" title="gryascale" class="img5">
+	<img src="alfianyulianto.jpg" alt="alfian yulianto" title="sepia" class="img6">
+	<img src="alfianyulianto.jpg" alt="alfian yulianto" title="hue-rotate" class="img7">
+	<img src="alfianyulianto.jpg" alt="alfian yulianto" title="invert" class="img8">
+	<img src="alfianyulianto.jpg" alt="alfian yulianto" title="opacity" class="img9">
+	<img src="alfianyulianto.jpg" alt="alfian yulianto" title="drop-shadow" class="img10">
+
+	<br>
+	<h1>alfian yulianto</h1>
+
+	<img src="alfianyulianto.jpg" alt="alfian yulianto" title="multiple filter" class="img11">
+
+</body>
+</html>

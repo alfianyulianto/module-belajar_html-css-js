@@ -1,0 +1,27 @@
+- hide() : menyembunyikan element HTML
+- show() : menampilkan element HTML
+- toggle() : jika elementnya tampil maka toggle akan berungsi menghilangkan element(hide), jika elementnya hilang maka toggle akan menampilkan element(show)
+- fadeOut() : memudarkan element HTML sampai tak terlihat
+- fadeIn() : memudarkan element HTML sampai terlihat
+- fadeToggle() : jika elementnya tampil maka toggle akan berungsi menghilangkan element(hide), jika elementnya hilang maka toggle akan menampilkan element(show)
+- fadeTo() : memungkinkankita untuk melakukan feading pada opacity
+- slideUp() : menyembunyikan element HTML
+- slideDown() : menampilkan element HTML
+- fadeToggle() : jika elementnya tampil maka toggle akan berungsi menghilangkan element(hide), jika elementnya hilang maka toggle akan menampilkan element(show)
+
+
+
+
+Sintaks :
+$(selector).hide(speed,callback);
+$(selector).show(speed,callback);
+$(selector).toggle(speed,callback);
+$(selector).fadeOut(speed,callback);
+$(selector).fadeIn(speed,callback);
+$(selector).fadeToggle(speed,callback);
+$(selector).fadeTo(speed,opacity,callback);
+$(selector).slideUp(speed,callback);
+$(selector).slideDown(speed,callback);
+$(selector).slideToggle(speed,callback);
+
+Sped : "slow", "fast", milliseconds

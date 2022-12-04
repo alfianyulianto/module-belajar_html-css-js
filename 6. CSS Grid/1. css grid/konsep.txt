@@ -1,0 +1,6 @@
+- CSS Grid sebuah modul CSS 'baru' untuk mendefinisikan sistem layout 2 dimensi (baris&kolom)
+- Cara menjalankan CSS Grid
+  .conatiner {
+    display: grid;
+  }
+- Kita bisa menggunakan berbarengan antara CSS Grid dan Flex Box

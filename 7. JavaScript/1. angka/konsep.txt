@@ -1,0 +1,39 @@
+- Didalam JavaScript itu tidak ada integer atau bilangan bulat tapi yang ada ialah floating point atau bilangan pecahan
+- Ukuran angka yang bisa di tampung dalam JavaScript yaitu 64bit atau 2^64 atau 18 x 10^18
+- Tapi 64bit tidak akan bisa dipakai semua
+
+Angka yang disimpan dalam JavaScript antara lain:
+1. Angka tanpa desimal atau integer
+	- 10, 1500, 123456
+	- angka ini akurat sampai 15 digit
+		misal angka 9999999999999999 -> akan menjadi 1000000000000000
+		walaupun kita tulis dalam bentuk bilangan bulat yang diproses adalah bilangan pecahan sehingga jika sudah lebih dari 15 digit maka akan bibulatkan
+2. Angka dengan desimal 
+	- 3.14, 0.5, 100.00
+3. Eksponen
+	- 123e5 ->12300000
+	- 123e-5 -> 0.00123
+4. Bilangan negatif
+
+Urutan bit penggunaan yaitu
+1 bit digunakan untuk penanda jika bilangannya negatif
+11 bit digunakan untuk eksponen
+52 bit digunakan untuk menyimpan angka sebenarnya termasuk titik
+
+
+- Jangan awali angka pada JavaScrip itu dengan angka 0 
+- Jika kita mengawali angka JavaScrip dengan 0 maka akan dianggap dengan bilangan oktal
+	misalkan 022 akan menghasilkan 18
+
+- Jangan awali angka pada JavaScript dengan 0x
+- Jika kita mengawali angka JavaScrip dengan 0x maka akan dianggap dengan bilangan heksadesimal
+	misalkan 0xFF akan menghasilkan 255
+
+Angka Spesial
+- infinity : artinya jika kita membagi bilangan positif dengan angka 0 maka JavaScript akan mengembalikan nilai infinity
+- -infinity : artinya jika kita membagi bilangan negatif dengan angka 0 maka JavaScript akan mengembalikan nilai -infinity
+- NaN : artinya jika kita membagi 0 atau string dengan angka 0 maka JavaScript akan mengembalikan nilai NaN. Selain itu jika kita membagi angka berpapun dengan string maka JavaScript akan mengembalikan nilai NaN atau mengkalikan string dengan angka berapapun juga akan mengembalikan nilai NaN
+
+
+- Jika suatu bilangan dibagi atau dikali dengan string angka maka JS akan membaca string tersebut dengan angka dan akan melakukan perhitungan sebagimana seperti angka
+	misal 100 / "10" -> 10

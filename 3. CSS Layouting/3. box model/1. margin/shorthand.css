@@ -1,0 +1,38 @@
+/*Shorthand : marupakan cara menyingkat 
+penulisan margin*/
+/*Properti yang digunakan yaitu "margin"
+ini bisa digunkan untuk beberapa value diantaraya 
+1 value, 2 value, 3 value, 4 value*/
+/*margin:  20px -> artinya keempat sisi akan 20px */
+/*margin:  10px 30px -> artinya atas bawah 10px
+, kiri kanan 30px*/
+/*margin:  30px 20px 40px -> artinya atas 30px, 
+kiri kanan 20px, bawah 40px*/
+/*margin:  20px 10px 40px 30px -> artinya atas 20px,
+kanan 10px, bawah 40px, kiri 30px*/
+
+
+.satu {
+	width: 200px;
+	height: 200px;
+	background-color: lightgreen;
+	margin: 50px;
+}
+.dua {
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	margin: 10px auto;
+}
+.tiga {
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+	margin: 20px auto 10px;
+}
+.empat {
+	width: 25px;
+	height: 25px;
+	background-color: pink;
+	margin: 100px 20px 10px 100px;
+}

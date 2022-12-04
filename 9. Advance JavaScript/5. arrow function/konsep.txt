@@ -1,0 +1,11 @@
+Arrow Funtion : merupakan bentuk lain yang lebih ringkas dari Function  Expression. -Mozilla
+
+let tampilPesan= (nama) => {
+    alert(`halo, ${nama}`);
+}
+tampilPesan('Alfian Yulianto');
+
+
+
+Contoh lain dari Arrow Function
+1. function map : untuk memetakan sebuah function ke dalam array

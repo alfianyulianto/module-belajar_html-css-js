@@ -1,0 +1,11 @@
+- function deklaration
+	1. Lebih Fleksibel (dapat ditulis dimanapun atau dapat dideklarasikan sebelum atau sesudah dipanggil) 
+		- konsep Hoisting
+	2. Lebih mudah dipahami untuk pemula
+
+- function expression
+	1. Harus didefinisikan dahulu sebelum dipanggil
+	2. Lebih powerfull
+		- sebagai closure
+		- sebagai argument untuk function yang lain (callback)
+		- IIFE (immediantely invoked function expression)

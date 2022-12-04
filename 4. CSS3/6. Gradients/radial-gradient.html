@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gradien</title>
+	<style>
+		.satu {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+			background-image: radial-gradient(red 20%, #f0d606 50%, rgba(255, 255, 0, 1) 50%, green 70%);
+		}
+		.dua {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+			background-image: radial-gradient(circle, red, green);
+		}
+		.tiga {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+			background-image: radial-gradient(circle closest-side at 100px 100px, red 36%, green 50%, yellow);
+		}
+		.empat {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+			background-image: radial-gradient(circle farthest-side at top center, red, green);	
+		}
+		.lima {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+			background-image: radial-gradient(circle closest-corner at center center, white 30%, red 90%);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="satu"></div>
+	<div class="dua"></div>
+	<div class="tiga"></div>
+	<div class="empat"></div>
+	<div class="lima"></div>
+	
+</body>
+</html>

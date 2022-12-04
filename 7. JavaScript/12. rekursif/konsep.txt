@@ -1,0 +1,15 @@
+- rekursif : sebuab fungsi yang memanggil dirinya sendiri
+- rekursi dapat memungkinkan untuk masuk ke dalam sebuah looping forever
+
+- base case : kondisi akhir dari rekursif yang menghasilkan sebuah nilai
+
+- rekursif bisa dibuat loopingnya tapi looping belum tentu dapat dibuat rekursifnya
+
+- implementasi rekursif antara lain:
+	1. looping
+	2. deret fibonacci
+	3. pencarian dan penelurusan pada struktur data list dan tree
+	4. bahasa pemograman yang tidak memiliki pengulangan
+		- haskell
+		- erlang
+		- prolog

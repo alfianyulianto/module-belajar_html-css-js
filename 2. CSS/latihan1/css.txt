@@ -1,0 +1,20 @@
+/*CSS*/
+/*Cascading Style Sheet*/
+/*merupakan mekanisme sederhana yang 
+mengatur gaya / style (ukuran, warna, posisi) 
+pada halaman website*/
+
+/*Anatomy CSS*/
+/*selector{ property: value; }*/
+
+/*Selector: merupakan bagian dari CSS untuk memilih 
+atau memanipulasi element spesifik pada HTML*/
+/*Selector bisa dipilih berdasarka element HTML
+tag, id, class, pola / pettern*/
+/*Semakin kompleks struktur HTML,
+maka selector akan semakin kompleks / spesifik*/
+
+/*menempatkan CSS*/
+/*1. embed : <style></style>*/
+/*2. inline : <p style="color:  lightblue;">...</p> */
+/*3. external : <link rel="stylesheet" href="style.css">*/

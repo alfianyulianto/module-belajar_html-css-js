@@ -1,0 +1,33 @@
+body {
+	background-color: #12ab1c;
+	background-image: url(gambar/bg2.jpg);
+	/*background-repeat: repeat-x;*/
+	background-repeat: repeat-y;
+	/*background-repeat: repeat;*/
+	background-repeat: no-repeat;
+	/*dengan mengunakan parameter backgorund-repeat 
+	dan value no-repeat mempunyai akses 
+	ke background-position */
+	/*terdapat 2 posisi sumbu yaitu 
+	sumbu y: top, center, bottom
+	sumbu x:  left, center, right
+	dan juga bisa menkombinasi dari kebuda sumbu tersebut
+	top left, top right, top center, 
+	center left, center right, center center
+	botton left, botton, right, botton center
+	x% y%, x-pos y-pos*/
+	/*background-position: center center;*/
+	background-position: left bottom;
+	/*background-size: contain;*/
+	background-size: 100px;
+
+/*Urutan*/
+/*background: color url() position repeat
+/*
+body {
+	background: white url(logo.png) top center no repeat;
+}
+*/
+
+
+}

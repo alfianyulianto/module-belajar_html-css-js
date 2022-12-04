@@ -1,0 +1,34 @@
+.container {
+	width: 600px;
+	height: 600px;
+	border: 5px solid gray;
+	margin: 30px auto;
+	padding: 5px;
+	border: 5px solid gray;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+.container div{
+	width: 100px;
+	height: 100px;
+	background-color: lightskyblue;
+	margin: 2px;
+}
+.container div.satu {
+	width: 200px;
+}
+.container div.tiga {
+	width: 80px;
+}
+.container div.enam {
+	width: 50px;
+}
+.container div.tujuh{
+	width: 150px;
+}
+.container div.sebelas {
+	width: 170px;
+}
+
+

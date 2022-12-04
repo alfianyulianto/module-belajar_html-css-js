@@ -1,0 +1,5 @@
+Callback : sebuah function yang dikirimkan sebagai parameter pada function yang lain -Developer Mozilla
+Callback : sebuah function yang dieksekusi setelah function yang lain dijalankan -Codeburst
+
+
+situs : OMDB API

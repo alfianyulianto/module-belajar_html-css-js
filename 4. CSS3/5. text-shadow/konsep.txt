@@ -1,0 +1,10 @@
+box-shadow : digunakan untuk memberikan bayangan pada sebuah text
+
+- Untuk membuat sebuah bayangan pada text diperlukan properti yang bernama "box-shadow"
+- box-shadow memiliki 4 value antara lain:
+	1. x-offset : untuk mengatur jarak bayangan pada sumbu horizontal. Nilainya numerik, jika nilainya positif maka akan bergerak ke kanan begitu sebaliknya jika negatif akan bergerak ke kiri
+	2. y-offset : untuk mengatur jarak bayangan pada sumbu horizontal. Nilainya numerik, jika nilainya positif maka akan bergerak ke bawah begitu sebaliknya jika negatif akan bergerak ke atas
+	3. blur : untuk menentukan seberapa berasar kita memberi ukuran blur ke bayangan
+	4. color : untuk menentukan warna bayangan
+
+box-shadow: x-ffset  y-offset  blur  color

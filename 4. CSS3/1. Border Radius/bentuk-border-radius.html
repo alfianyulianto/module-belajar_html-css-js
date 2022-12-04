@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bentuk Border Radius</title>
+	<style>
+		.kotak {
+			width: 150px;
+			height: 150px;
+			margin: 20px;
+			float: left;
+		}
+		.satu {
+			border: 8px solid #ccc;
+			border-radius: 10px;
+		}
+		.dua {
+			border: 8px solid red;
+			border-radius: 0 60px;
+			/*border-top-right-radius: 60px;*/
+			/*border-bottom-left-radius: 60px;*/
+		}
+		.tiga {
+			border: 8px solid green;
+			border-radius: 50%;
+		}
+		.empat {
+			height: 70px;
+			border: 8px solid blue;
+			border-radius: 100px 100px 0 0;
+		}
+		.lima {
+			margin-top: 110px;
+			height: 70px;
+			border: 8px solid blue;
+			border-radius: 0 0 100px 100px;
+		}
+		.enam {
+			border: 8px solid orange;
+			border-radius: 20px 50% 50% 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="kotak satu"></div>
+	<div class="kotak dua"></div>
+	<div class="kotak tiga"></div>
+	<div class="kotak empat"></div>
+	<div class="kotak lima"></div>
+	<div class="kotak enam"></div>
+
+</body>
+</html>

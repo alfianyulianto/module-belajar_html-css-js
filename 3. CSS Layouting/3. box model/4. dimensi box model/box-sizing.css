@@ -1,0 +1,19 @@
+div	{
+	width: 600px;
+	margin: 10px auto;
+	box-sizing: border-box; /*ini akan mengatur sesuai dengan lebar element yaitu 600px*/
+}
+
+.satu {
+	background-color: royalblue;
+	padding: 10px;
+	border: 5px solid red;
+	/*lebar 630px*/
+}
+
+.dua {
+	background-color: lightgreen;
+	padding: 30px;
+	border:  10px dashed orange;
+	/*lebar 680px*/
+}

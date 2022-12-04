@@ -1,0 +1,21 @@
+|----------------------|
+| DOM Selection Method |
+|----------------------|
+
+1. getElementById() : untuk memilih element pada DOM berdasarkan "ID"
+2. getElementsByTagName() : untuk memilih element-element yang memiliki tag tertentu
+3. getElementsByClassName() : untuk mencari element yang memiliki nama class tertentu
+4. querySelector() : untuk mencari element berdasarkan selectornya (menggunkan CSS)
+5. querySelectorAll() : untuk mencari element berdasarkan selectornya (mengunakan CSS)
+
+
+YANG DIKEMBALIKAN DARI PENGGUNAKAN "DOM Selection Method"
+
+			Method			|	   Hasil
+-----------------------------------------------
+getElmentById()				|	  element
+getElementsByTagName()		|  HTMLCollection
+getElementsByClassName()    |  HTMLCollection
+querySelector()				|	  element
+querySelectorAll()			| 	  nodeList
+-----------------------------------------------

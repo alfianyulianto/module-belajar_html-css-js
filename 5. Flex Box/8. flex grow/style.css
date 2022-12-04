@@ -1,0 +1,22 @@
+.container {
+	width: 600px;
+	height: 150px;
+	border: 5px solid gray;
+	margin: 30px auto;
+	padding: 5px;
+	border: 5px solid gray;
+	display: flex;
+	align-items: stretch;
+}
+.container div{
+	background-color: lightskyblue;
+	margin: 2px;
+	flex: 1;
+}
+.container div.satu {
+	flex: 3;
+}
+.container div.tiga {
+	flex: 2;
+}
+

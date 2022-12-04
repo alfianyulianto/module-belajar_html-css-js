@@ -1,0 +1,3 @@
+rgba() : digunakan untuk transparansi pada sebuah warna
+rgb : untuk memberikan sebuah warna (red, green, blue)
+a : merupakan alpha (memberikan transparansi)

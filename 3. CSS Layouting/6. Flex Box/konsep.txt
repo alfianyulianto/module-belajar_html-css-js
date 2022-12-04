@@ -1,0 +1,28 @@
+- Flex Box  merupakan slaah satu modul CSS 3, yang berfungsi  untuk mengatur layout website dalam satu dimensi atau satu arah
+- Ada dua element penting yang perlu diperhatikan saat menggunakan flexbox, yaitu "parent/container" dan "child/item".
+- Cara menggunakan flexbox dengan mengubah display parent/container menjadi "flex"
+
+Properti pada flaxbox antar lain:
+1. Display : untuk mengubah display menjadi flexbox
+	- flex -> akan mengubah display. Misal yang awal block akan menjadi inline dan inline akan menjadi block
+2. Flex-Direction : untuk mengatur arah layout (baris/kolom)
+	- row(defaulf) -> dari kiri ke kanan
+	- row-reverse -> dari kanan ke kiri
+	- column(default) -> dari atas ke bawah
+	- column -> dari bawah ke atas
+3. Flex-Wrap : untuk mengatur ukuran container
+	- nowrap(default) -> semua item flex berada pada satu baris. Sehingga ukuran item akan menyesuaikan
+	- wrap -> Item akan membungkus ke beberapa baris, dari atas ke bawah
+	- wrap-reverse -> Item akan membungkus ke beberapa baris, dari bawah ke atas
+4. Flex-Flow : shorthand properti untuk menggabungkan antara direction dan wrap
+5. Align-Items : untuk megatur alignment child secara vertikal
+	- flex-start(default) -> item dikemas dari awal arah flex (dari kanan)
+	- flex-end -> item dikemas dari akhir arah flex (dari kiri)
+	- start -> item dikemas menuju awal
+	- end -> item dikemas menjelang akhir
+	- left -> item dikemas ke arah tepi kiri wadah, kecuali itu tidak masuk akal dengan flex-direction, maka berperilaku seperti start
+	- right -> item dikemas ke arah tepi kanan wadah, kecuali itu tidak masuk akal dengan flex-direction, maka berperilaku seperti end
+	- center -> item dipusatkan sepanjang garis
+	- space-between -> item akan didistribusikan secara merata di baris; item pertama ada di garis awal, item terakhir di garis terakhir
+	- space-around -> item didistribusikan secara merata dalam baris dengan ruang yang sama di sekitarnya. Jadi disini item pertama dan item terakhir tidak memiliki jarak yang sama seperti item kedua dan sterusnya. Karena item pertaam dan terakhir berdekatan dengan tepi bukan dengan item lain.
+	- space-evently -> item didistribusikan secar merata sehingga jarak antara dua item (dan spasi ke tepi) sama

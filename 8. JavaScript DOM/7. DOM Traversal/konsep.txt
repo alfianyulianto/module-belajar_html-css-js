@@ -1,0 +1,20 @@
+DOM Traversal / Penelusuran DOM
+- Merupakan penelusuran node / element berdasarkan element yang sudah diseleksi sebelumnya
+
+Ada apa aja method untuk menelusuri dengan mengunakan DOM Traversal
+- parentNode : belum tentu element HTML / misal ada enter maka enterstersebut akan masuk
+- parentElement : menggambil element HTML
+- nextSibling :saudara kadung dari element yang kita pilih / misal ada enter maka enterstersebut akan masuk
+- nextElementSibling
+- previousSibling
+- previousElementSibling
+
+			Method								|	   	Hasil
+-----------------------------------------------
+parentNode				    			|	  	Node
+parentElement		        		|     element
+nextSibling             		|     node
+nextElementSibling		  		|	 		element
+previousSibling			    		| 	  node
+previousElementSibling      |     element
+-----------------------------------------------

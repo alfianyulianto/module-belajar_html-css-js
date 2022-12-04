@@ -1,0 +1,31 @@
+Semua tindakan pengunjung berbeda yang dapat ditanggapi oleh halaman web disebut event.
+- Mouse Event
+    1. click
+        $("p").click(function(){
+            // action goes here!!
+        });
+    2. doubleclick
+    3. mouseenter
+    4. mouseleave
+    5. moseup : Fungsi dijalankan, ketika tombol kiri, tengah atau kanan mouse dilepaskan, saat mouse berada di atas elemen HTML:
+    6. mousedown : Fungsi dijalankan, ketika tombol kiri, tengah atau kanan mouse ditekan, saat mouse berada di atas elemen HTML:
+    7. houver : Fungsi pertama dijalankan ketika mouse memasuki elemen HTML, dan fungsi kedua dijalankan ketika mouse meninggalkan elemen HTML:
+
+- Keyboard Event
+    1. keyup : saat tombol Keyboard dilepaskan
+        $(':input').keyup(function(){
+            console.log($(':input').val());
+        });
+
+    2. keypress dan keydown : saat tombol keyboard ditekan
+    
+    3. change : saat ada perubahan pada input dan di enter / di klik
+        $(':input').on('change', function(){
+        console.log($(':input').val());
+        });
+        $(':input').click(function(){
+            $(':input').change();
+        });
+
+- Form Event
+- Document/Window Events

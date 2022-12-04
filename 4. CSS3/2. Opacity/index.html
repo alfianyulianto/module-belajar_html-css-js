@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Opacity</title>
+	<style>
+		body {
+			background-image: url(bg.jpg);
+		}
+		.satu {
+			width: 300px;
+			height: 300px;
+			background-color: #f60;
+			opacity: 0.8;
+		}
+		.dua {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+		}
+
+		.tiga {
+			width: 300px;
+			height: 300px;
+			background-color: #f60;
+			opacity: 0.8;
+			position: relative;
+		}
+		.empat {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			position: absolute;
+			right: -50px;
+			bottom: -50px;
+			opacity: 0.5;
+		}
+
+		.lima {
+			width: 300px;
+			height: 300px;
+			background-color: #f60;
+			/*opacity: 0.5;*/
+			position: relative;
+		}
+		.enam {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			position: absolute;
+			right: -50px;
+			bottom: -50px;
+			opacity: 0.5;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="satu">
+		<div class="dua"></div>
+	</div>
+	<hr>
+	<div class="tiga">
+		<div class="empat"></div>
+	</div>
+	<hr>
+	<br><br>
+	<div class="lima">
+		<div class="enam"></div>
+	</div>
+
+</body>
+</html>

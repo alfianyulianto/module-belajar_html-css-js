@@ -1,0 +1,33 @@
+/*Properti yang digunakan yaitu "padding"
+ini bisa digunkan untuk beberapa value diantaraya 
+1 value, 2 value, 3 value, 4 value*/
+/*padding:  20px -> artinya keempat sisi akan 20px */
+/*padding:  10px 30px -> artinya atas bawah 10px
+, kiri kanan 30px*/
+/*padding:  30px 20px 40px -> artinya atas 30px, 
+kiri kanan 20px, bawah 40px*/
+/*padding:  20px 10px 40px 30px -> artinya atas 20px,
+kanan 10px, bawah 40px, kiri 30px*/
+
+
+/*PERBEDAAN MARGIN DAN PADDING*/
+/*padding tidak bisa diberi nilai negatif*/
+/*padding tidak punya nilai auto*/
+
+
+/*padding mempengaruhi ukuran element*/
+/*misal kita ingin membuat ukuran elemennya 
+yaitu height dan width 300px dan untuk paddingnya kita memberi
+ukuran padding: 50px*/
+/*maka kita harus membuat width dan height menjadi 200px*/
+/*ini dilakukan agar ukuran element yang dibuat sesuai
+dengan yang diharapkan yaitu 300px*/
+
+
+div {
+	width: 200px;
+	height: 200px;
+	background-color: coral;
+	margin: 20px auto;
+	padding: 50px;
+} 

@@ -1,0 +1,28 @@
+- font-face : digunakan untuk mengelola font pada CSS3
+- Dalam memilih font kita harus memastikan bahwa font tersebut ada di sistem operasi client / user
+- Jika kita ingin menggunakan font yang bagus tanpa memikirkan font yang ada di client / user yang lain maka buka situs Google Font http://www.fonts.google.com
+
+Sintaks : 
+@font-face {
+	font-family: 'namaFontBaru'	;
+	src: url('lokasi/file/fontBaru.eot');
+	src: url('lokasi/file/fontBaru.eot@#iefix') format('embed-opentype'),
+		 url('lokasi/file/fontBaru/woff2') format('woff2'),
+		 url('lokasi/file/fontbaru.woff') format('woff'),
+		 url('lokasi.file.fontBaru.ttf') format('truetype'),
+		 url('lokasi/file/fontBaru.svg#svgFontName') format('svg');
+}
+
+Browser Support
+1. TTF/OTF : Chorme, Internet Explorer, Firefox, Safari, Opera
+2. WOF : Chrome, Internet Explorer, Firefox, Safari, Opera
+3. WOFF2 : Chrome, Firefox, Opera
+4. SVG : Chrome, Safari, Opera
+5. EOT : Mocrosoft Edge
+
+Layanan Font
+1. font.google.com
+2. "fontsquirell.com"
+3. fontspring.com
+4. webtype.com
+5. typetheque.com 

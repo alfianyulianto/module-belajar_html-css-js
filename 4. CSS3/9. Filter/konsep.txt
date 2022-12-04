@@ -1,0 +1,13 @@
+- Filter merupakan properti CSS3 yang digunakan untuk memberikan efek visual pada gambar, background atau border
+- Mengunakan properti filter dengan nilai opacity dan drop-shadow sama dengan menggunakan opacity atau box shadow atau text shadow. Akan tetapi perofmens dari properti filter jauh lebih baik dari properti opacity atau box shadow atau text shadow, karena properti filter bekerja dengan akselerasi hardware komputer / vga card
+Sitaks:
+filter: <tipe-filter>;
+
+Tipe Filter antara lain:
+- blur				- grayscale			- invert
+- brightness		- sepia				- opacity
+- contrast			- hue-rotate		- drop-shadow
+- saturate
+
+
+http://html5-demos.appspot.com/static/css/filters/index.html

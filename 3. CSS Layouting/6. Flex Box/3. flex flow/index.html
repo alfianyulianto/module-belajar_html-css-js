@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flex</title>
+	<style type="text/css">
+		.container {
+			margin: auto;
+			width: 500px;
+			border: 1px solid black;
+			display: flex;
+			flex-flow: row-reverse wrap-reverse;
+		}
+		.kotak1 {
+			width: 200px;
+			height: 100px;
+		}
+		.kotak2 {
+			width: 110px;
+			height: 100px;
+		}
+		.kotak3{
+			width: 50px;
+			height: 100px;
+		}
+		.kotak4 {
+			width: 200px;
+			height: 100px;
+		}
+		.warna {
+			margin: 5px;
+			text-align: center;
+			line-height: 100px;
+			display: inline-block;
+			background-color: salmon;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="kotak1 warna">1</div><div class="kotak2 warna">2</div><div class="kotak3 warna">3</div><div class="kotak4 warna">4</div>
+	</div>
+</body>
+</html>

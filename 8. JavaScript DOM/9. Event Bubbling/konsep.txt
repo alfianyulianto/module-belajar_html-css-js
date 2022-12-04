@@ -1,0 +1,3 @@
+Event Bubbling : terjadi ketika sebuah element tag<a> yang kita kasih event kemudian element pembungkusnya juga ada sebuah event, maka yang dikerjakan event dari element pembungkusnya dahulu kemudian baru event di tag<a> baru dikerjakan.
+
+Untuk mengatasi hal tersebut tambahkan method "stopPropagation()"

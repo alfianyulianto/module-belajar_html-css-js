@@ -1,0 +1,36 @@
+Tamplate literal / Tamplate string : adalah string literal yang memungkinkan adanya "expression" didalamnya
+
+Cara membuat string literal :
+1. let nama = 'Alfian';                                 // menggunakan kutip 1
+2. let nim = "L200180121";                              // menggunakan kutip 2
+3. let email = `alfianyulianto36@gmail.com`             //menggunakan back tick
+
+Tamplate Literal
+- Menggunakan back tick (``)
+- Kita bisa melakukan "Multi-line String"
+    contoh : `string text baris 1
+              string text baris 2
+              string text baris 3`
+
+- Bisa melakukan "Embedded Expression"
+    contoh : `string text ${expression} string text`;
+
+- HTML Fragments
+    contoh : const mhs = {
+        nama: 'alfian',
+        umur: 21,
+        nim: 'L200180121',
+        email: 'alfianyulainto36@gmail.com'
+    }
+    let el = `<div class="mhs">
+        <h2>${mhs.nama}</h2>
+        <span class="nrp">${mhs.nrp}</span>
+    </div>`;
+
+- Expression Interpolation
+    contoh : let a = 10;
+             let b = 5;
+             console.log(`Jika a = 10 dan b = 5, maka hasil jumlahnya adalah : ${a+b}`)
+
+- Tagged Tamplate : bentuk yang lebih kompleks dari taplates literal, yang memungkinkan kita untuk membaca tamplate literalmenggunakan sebuah functin
+    contoh : tag `string text ${expression} string text`

@@ -1,0 +1,113 @@
+Operator 
+
+Ada beberapa jenis operator pada JavaScrip antara lain:
+1. aritmatika
+2. penegasan
+3. perbandingan 
+4. logika
+5. string
+Kelima operator itu disebut juga operator "binary"
+- Operator binary merupakan operator yang membutuhkan 2 operand
+- "operand1 operator operand2"
+
+- ada beberapa operator aritmatika pada JavaScript antara lain
+	1. +
+	2. -
+	3. *
+	4. /
+	5. % atau modulus (sisa bagi)
+
+- ada beberapa operator penegasan pada JavaScript antara lain
+	1. =
+	2. += atau x = x + y
+	3. -= atau x = x - y
+	4. *= atau x = x * y
+	5. /= atau x = x / y
+	6. %= atau x = x % y
+
+- ada beberapa operator perbandingan(comparison) pada JavaScript antara lain
+	1. ==
+	2. !=
+	3. === (digunakan untuk mengecek tipe datanya juga)
+	4. !==
+	5. >
+	6. <
+	7. >=
+	8. <=
+	Dengan operator perbandingan ini akan menghasilkan sebuah nilai boolean "true" atau "false"
+
+- ada beberapa operator logika pada JavaScript antara lain
+	1. && atau AND	-> expr1 && expr2 (bernilai expr2 jika expr1 bernilai "true")
+	2. || atau OR		-> expr1 || expr2 (bernilai expr2 jika expr1 bernilai "false")
+	3. ! atau NOT
+	- Jika menggunakan AND dan hasilnya true maka keduanya harus bernilai true. Jika menggunakan AND dan hasilnya false maka salah satunya atau keduanya harus benilai false
+	- Jika menggunakan OR dan hasilnya ture maka salah satu atau keduanya harus bernilai true. Jika menggunakan OR dan hasilnya false maka keduanya harus bernilai false
+
+- untuk membuat operator string maka menggunakan tanda +
+	var a
+	var b
+	a = "alfian"
+	b = "yulianto"
+	a + " " + b  -> "alfian yulianto"
+------------------------------------------
+	10 + 10  -> 20
+	10 + "10"  -> "1010"
+	"10" + 10  -> "1010"
+	10 + 10 + "10"  -> "2010"
+	"10" + 10 + 10  -> "101010"
+
+
+6. kondisional : digunakan untuk pengecekan pada sebuah kondisi dan menentukan nilai yang dihasilkan ketika kondisinya bernilai true atau false
+Operator ini bisa disebut operator "ternay"
+- Operator ternary merupakan operator yang membutukan 3 operand
+	Sintaks : (kondisi) ? benar/true : salah/false
+
+	var x 
+	x = 10
+	(x % 2 == 0) ? "genap" : "ganjil"  -> "genap"
+-----------------------------------------------------
+	var x 
+	x = 5
+	(x % 2 == 0) ? "genap" : "ganjil"  -> "ganjil"
+
+
+
+7. typeof : digunakan untuk mengetahui tipe data
+Operator ini bisa disebut operator "unary" 
+- Operator unary merupakan operator yang membutuhkan 1 operand
+- "operator operand" atau "operand operator"
+
+8. delete : digunakan untuk mengahapus element pada array atau object
+Operator ini bisa disebut operator "unary"
+contoh : 
+	const arr = [1,2,3,4];
+	delete arr[0];
+--------------------------
+	const obj = {nama: "Alfian", umur:21}
+	delete obj.nama;
+
+9. Relational Operan : digunakan untuk melakukan komparasi terhadap operan-operan. Ini mirip dengan operator perbandingan(comparison), bedanya relational operator ini berfokus pada struktur datanya.
+- Ada 2 relational operator:
+	1. in : mengecek keberadaan sebuah data di dalam array / object
+	2. instanceof : mengecek apakah suatu data merupakan instansiasi dati tipe data tertentu
+
+contoh in :
+	const buah = ['Manga', 'Jeruk', 'Apel'];
+	const orang = {nama:'Alfian', umur:21};
+
+	conts buahFavorit = 'Semangka' in buah;
+	console.log(buahFavorit); 		// false
+
+	conts orangResult = 'nama' in orang;
+	console.log(orangResult);			// true
+
+contoh instanceof :
+	cons date = new Date;
+	date instanceof Date; 		// true
+
+	const arr = new Array;
+	arr instanceof Array;			// true
+
+	const obj = new Object;
+	obj instanceof Object;			// true
+

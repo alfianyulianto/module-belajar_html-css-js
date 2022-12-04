@@ -1,0 +1,73 @@
+Flex Box (Flexsible Box Modules)
+- Felx Box merupakan model layuot 1 "dimensi" yang dapat mengatur jarak dan penjajaran(alignment) antara item dalam sebuah container
+- Dengan menggunakan flex box kita dapat mengatur layout dalam 1 dimensi maksudnya "Hanya dapat mengatur 1 dimensi pada saat teretentu, antara baris atau kolom, tidak bisa keduanya sekaligus"
+
+
+Pengertian lain:
+- Flexbox Layout Module
+	"Sebauah modul yang menawarkan cara yang efektid untuk menyusun, mensejajarkan dan mendistribusikan jarak antar item di dalam sebuah container, 'meskipun ukurannya dinamis atau bahkan kita tidak tau ukurannya' "
+
+	-> Artinya misalkan kita ambil data dari database atau API kitan tidak tau gambarnya ukurannya berapa kita tidak tau tulisannya seberapa banyak sehingga dengan flexbox kita tidak perlu repot mengaturnya karena nanti akan diatur secara otomatis
+
+ISTILAH YANG PERLU DIPAHAMI DALAM FLEXBOX
+1. Container/parent -> element pembungkusnya
+2. Item/childs -> element yang ada di dalam pembungkus
+3. main axis -> ketika kita set element-elementnyaa sejajar secara horizontal
+4. cross axis -> ketika kita mau ubah elementnya menjadi vertikal
+CATATAN : Ketika element awalnya berbentu kolom maka vertikalnya disebut 'main axis'. Kemudian kita ubah ke horizontal maka disebut 'cross axis'
+5. main size -> ukuran dari containernya
+6. cross size -> ukuran dari kolomnya
+7. main start -> menentukan awal dari sebuah element secara horizontal
+8. main end -> menetukan akhir dari sebuah element secara horizontal
+7. cross start -> menentukan awal dari sebuah element secara vertikal
+8. cross end -> menetukan akhir dari sebuah element secara vertikal
+
+
+Properti pada CONTAINER
+1. Display: untuk mengubah display menjadi flexbox
+	- flex
+	-> membuat sebuah element parent menjadi flex box, maka membuat element-element didalamnya akan berperilaku sebagai flex juga
+2. flex-dirextion: untuk mengatur arah layout baris/kolom
+	- row(defaulet) -> dari kiri ke kanan
+	- row-reverse -> dari kanan ke kiri
+	- column -> dari atas ke bawah
+	- column-reverse -> dari bawah ke atas
+3. flex-wrap: untuk mengatur ketika element tidak muat lagi ke dalam barisnya. Secar default, semua item di dalam container akan berada pada satu baris meskipun ukurannya sudah tidak cukup, wrap memungkinkan untuk memindahkan items ke baris di bawahnya
+	- nowrap(default) -> semua item flex berada pada satu baris. Sehingga ukuran item akan menyesuaikan
+	- wrap -> Container akan membungkus ke beberapa baris, dari atas ke bawah
+	- wrap-reverse -> Container akan membungkus ke beberapa baris, dari bawah ke atas
+4. justifiy-content : untuk megatur jarak anatara items secara horizontal
+	- flex-start(default) -> item dikemas dari awal arah flex (dari kanan)
+	- flex-end -> item dikemas dari akhir arah flex (dari kiri)
+	- start -> item dikemas menuju awal
+	- end -> item dikemas menjelang akhir
+	- left -> item dikemas ke arah tepi kiri wadah, kecuali itu tidak masuk akal dengan flex-direction, maka berperilaku seperti start
+	- right -> item dikemas ke arah tepi kanan wadah, kecuali itu tidak masuk akal dengan flex-direction, maka berperilaku seperti end
+	- center -> item dipusatkan sepanjang garis
+	- space-between -> item akan didistribusikan secara merata di baris; item pertama ada di garis awal, item terakhir di garis terakhir
+	- space-around -> item didistribusikan secara merata dalam baris dengan ruang yang sama di sekitarnya. Jadi disini item pertama dan item terakhir tidak memiliki jarak yang sama seperti item kedua dan sterusnya. Karena item pertaam dan terakhir berdekatan dengan tepi bukan dengan item lain.
+	- space-evently -> item didistribusikan secar merata sehingga jarak antara dua item (dan spasi ke tepi) sama
+5. alignt-item : untuk mengatur penjajaran antar item secara vertikal
+	- flex-start -> content akan sejajar di atas
+	- flex-end -> content akan sejajar di atas
+	- center -> content akan sejajar di tengah
+	- stretch -> content akan sejajar di atas bawah
+	- baseline -> content akan sejajar berdasarkan nilai
+6. align-contain : untuk mengatur jarak antara items secara vertikal (hanya berfungsi ketika item lebih dari 1 baris)
+	- flex-start
+	- flex-end
+	- center
+	- stretch
+	- space-between
+	- space-around
+
+
+Properti pada ITEMS
+1. order : untuk merubah posisi pada item
+2. flex-grow atau flex : untuk mengatur ukuran pada item
+3. align-self : mengatur perilaku penjajaran sebuah item yang spesifik terhadapt cros axis
+	- flex-start
+	- flex-end
+	- center
+	- baseline
+	- stretch

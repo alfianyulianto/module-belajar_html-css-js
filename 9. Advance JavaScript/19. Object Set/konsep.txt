@@ -1,0 +1,13 @@
+- Set adalah kumpulan niai (set of values)
+- Yang membedakan Set dengan struktur data yang lain adalah data pada Set tidak berurutan dan juga tidak diindeks.
+- Selain itu, data di dalam Set juga bersifat unik dan tidak ada duplikasi
+
+- Cara mendefinisikan Set dengan menggunakan sebuah Constructor "new Set()";
+
+- add() : untuk menambahkan element pada obeject Set. Fungsi ini hanya menerima satu parameter saja
+- delete() : untuk menghapus sebuah element pada object Set. Karena object Set tidak berindek maka kita langsung mengacu pada nilainya
+- has() : untuk mengecek apakah sebuah element teretentu ada atau tidak di dalam Object Set. has() mengembalikan boolean
+- clear() : untuk mengapus semua element dari Object Set
+- entries() : untuk mengembalikan objek iterator baru yang berisi pasangan [nilai, nilai] untuk setiap elemen dalam Object Set dalam urutan penyisipan.
+- forEach() : untuk mengeksekusi fungsi yang disediakan satu kali untuk setiap nilai dalam Object Set, dalam urutan penyisipan.
+- values() : untuk mengembalikan objek Iterator baru yang berisi nilai untuk setiap elemen dalam Object Set dalam urutan penyisipan.

@@ -1,0 +1,19 @@
+- scope : bagaimana proses suatu variable dapat diakses dalam program
+- Dalam pemograman ada 2 jenis scrope yaitu  block scope dan function scope
+- Block scope digunakan untuk bahasa pemograman C dan Java. Block Scope variable di buat di dalam kurung kurawal
+	misal dalam bahasa C :
+	int i = 2;
+
+  	if( i % 2 == 0 ) {
+		bool genap = true; // Block Scope : variable yang hanya dapat digunakan di dalam block ini sendiri
+	}
+	if( genap ) {
+		printf("Genap!");
+	}
+	hasilya -> undeclered
+
+- JavaScript tidak menganut Block Scope akan tetapi JavaScript menganut Function Scope
+- Analogi dari Function Scope -> Jika kita berada di dalam sebuah mobil dengan kaca film yang berwarna gelap tentunya kita bisa melihat ke luar, sedangkan yang diluar tidak akan bisa melihat ke dalam mobil.
+
+
+- JIKA KITA TIDAK MENDEKLARASIKAN SEBUAH var maka secara otomatis JS akan membuat sebuah var.
